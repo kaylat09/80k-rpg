@@ -793,6 +793,76 @@
           "identifier": "https://asset-resources.gdevelop.io/public-resources/24x24 Dino Characters/1c4882da78d02e0e0a5fc64979d93d70f1800c734c6efa52a0316e80819fea7c_Dino Mort_Sneak_6.png",
           "name": "Dino Mort_Sneak_6.png"
         }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wall.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{},\"localFilePath\":\"assets/Wall.png\"}",
+        "name": "Wall",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wall Red Flat.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wall Red Flat.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Kenney Sokoban/Wall/80d468c94d67ff96222d16e34d5e70f7ac485746862a7308242786d40a8f7ca5_Wall Red Flat.png",
+          "name": "Wall Red Flat.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bronze Sword.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Bronze Sword.png\",\"extension\":\".png\"}",
+        "name": "Bronze Sword.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 Pixel art RPG Items/Weapons/20de09f91cf2cb8bc411d9ed9bcea9c91ec051ab8519cf8dc5f00cd839c18a65_Bronze Sword.png",
+          "name": "Bronze Sword.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Bronze Sword2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Bronze Sword",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Monster.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Monster.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Characters/efcc4c7bd5d61af14041ce090f9facb0991e5fe42471ed980a92fd8322d97cc0_Monster.png",
+          "name": "Monster.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Projectile 3.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Projectile 3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Wesxdz Game Assets/skullcup/Props/0b78fdd188255380ef39694b3ef392887670d8ca1a6c2893bec70fedf78037d2_Projectile 3.png",
+          "name": "Projectile 3.png"
+        }
       }
     ],
     "resourceFolders": []
@@ -802,7 +872,13 @@
     "folderName": "__ROOT"
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Health",
+      "type": "number",
+      "value": 5
+    }
+  ],
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
@@ -811,6 +887,18 @@
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/timedbackandforthmovement"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/stayonscreen"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/smoothcamera"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/topdownmovementanimator"

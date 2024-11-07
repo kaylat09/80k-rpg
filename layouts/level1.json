@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 2.614020284690403,
+    "zoomFactor": 3.2970866164312485,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "CatacombTileMap",
       "persistentUuid": "d620ff0d-00de-43fe-929d-2ee7b9e0456a",
       "width": 0,
-      "x": 244,
-      "y": 146,
+      "x": 763,
+      "y": -146,
       "zOrder": 3,
       "numberProperties": [],
       "stringProperties": [
@@ -47,15 +47,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 600,
       "keepRatio": true,
       "layer": "Background",
       "name": "CatacombTileMap",
       "persistentUuid": "e3576930-6e58-4042-a223-5077c15adedb",
-      "width": 0,
-      "x": 244,
-      "y": 242,
+      "width": 798,
+      "x": 1,
+      "y": 0,
       "zOrder": 2,
       "numberProperties": [],
       "stringProperties": [
@@ -71,13 +72,29 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "",
+      "layer": "Background",
       "name": "DinoMort",
-      "persistentUuid": "86ad7443-2754-4400-a072-586db88ecc7e",
+      "persistentUuid": "720c24a8-1b42-497a-9a83-af0e50382b5c",
       "width": 0,
-      "x": 275,
-      "y": 277,
+      "x": 392,
+      "y": 290,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "Monster",
+      "persistentUuid": "556efc49-0c66-418c-9587-5ff1a87acb21",
+      "width": 0,
+      "x": 458,
+      "y": 295,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -90,13 +107,21 @@
       "type": "TileMap::SimpleTileMap",
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "canBeGrabbed": true,
+          "name": "Platform",
+          "platformType": "NormalPlatform",
+          "type": "PlatformBehavior::PlatformBehavior",
+          "yGrabOffset": 0
+        }
+      ],
       "content": {
         "atlasImage": "mainlevbuild.png",
         "rowCount": 40,
         "columnCount": 64,
         "tileSize": 16,
-        "tilesWithHitBox": "707,708,709,710,711,712,713,714,715,716,717,718,719,720,321,385,449,513,577,641,705,706,323,387,451,515,579,643,336,400,464,528,592,656,272,259,721,722,338,402,466,530,594,658,771,835,899,963,1027,1028,1029,1030,1031,1032,1033,1034,1035,1036,1037,1038,1039,1040,784,848,912,976,1345,1409,1473,1537,1601,1602,1603,1604,1347,1411,1475,1539,1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1616,1617,1618,1362,1426,1490,1554,1360,1424,1488,1552,260,261,262,263,264,265,266,267,268,269,270,271,258,273,324,388,452,516,580,644,325,389,453,517,581,645,326,390,454,518,582,646,327,391,455,519,583,647,328,392,456,520,584,648,329,393,457,521,585,649,330,394,458,522,586,650,331,395,459,523,587,651,332,396,460,524,588,652,333,397,461,525,589,653,334,398,462,526,590,654,335,399,463,527,591,655,772,836,900,964,773,837,901,965,774,838,902,966,775,839,903,967,776,840,904,968,777,841,905,969,778,842,906,970,779,843,907,971,780,844,908,972,781,845,909,973,782,846,910,974,783,847,911,975,1093,1157,1221,1094,1158,1222,1095,1159,1223,1096,1160,1224,1099,1163,1227,1100,1164,1228,1101,1165,1229,1102,1166,1230,1346,1410,1474,1538,322,386,450,514,578,642,337,401,465,529,593,657,1348,1412,1476,1540,1349,1413,1477,1541,1350,1414,1478,1542,1351,1415,1479,1543,1352,1416,1480,1544,1353,1417,1481,1545,1354,1418,1482,1546,1355,1419,1483,1547,1356,1420,1484,1548,1357,1421,1485,1549,1358,1422,1486,1550,1359,1423,1487,1551,1361,1425,1489,1553,1667,1731,1668,1732,1669,1733,1670,1734,1671,1735,1672,1736,1673,1737,1674,1738,1675,1739,1676,1740,1677,1741,1678,1742,1679,1743,1680,1744,1062,1126,1190,1254,1318,1382,1063,1127,1191,1255,1319,1383,1064,1128,1192,1256,1320,1384,1065,1129,1193,1257,1321,1385,1066,1130,1194,1258,1322,1386,1067,1131,1195,1259,1323,1387,872,936,1000,873,937,1001,1189,1253,1448,1449,1260,1196,1639,1703,1576,1640,1704,1768,1577,1641,1705,1769,1642,1706"
+        "tilesWithHitBox": "708,709,710,711,712,713,714,715,716,717,718,719,323,387,451,515,579,643,336,400,464,528,592,656,272,259,1028,1029,1030,1031,1032,1033,1034,1035,1036,1037,1038,1039,1604,1347,1411,1475,1539,1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1360,1424,1488,1552,260,261,262,263,264,265,266,267,268,269,270,271,258,273,324,388,452,516,580,644,325,389,453,517,581,645,326,390,454,518,582,646,327,391,455,519,583,647,328,392,456,520,584,648,329,393,457,521,585,649,330,394,458,522,586,650,331,395,459,523,587,651,332,396,460,524,588,652,333,397,461,525,589,653,334,398,462,526,590,654,335,399,463,527,591,655,772,836,900,964,773,837,901,965,774,838,902,966,775,839,903,967,776,840,904,968,777,841,905,969,778,842,906,970,779,843,907,971,780,844,908,972,781,845,909,973,782,846,910,974,783,847,911,975,1093,1157,1221,1094,1158,1222,1095,1159,1223,1096,1160,1224,1099,1163,1227,1100,1164,1228,1101,1165,1229,1102,1166,1230,1346,1410,1474,1538,322,386,450,514,578,642,337,401,465,529,593,657,1348,1412,1476,1540,1349,1413,1477,1541,1350,1414,1478,1542,1351,1415,1479,1543,1352,1416,1480,1544,1353,1417,1481,1545,1354,1418,1482,1546,1355,1419,1483,1547,1356,1420,1484,1548,1357,1421,1485,1549,1358,1422,1486,1550,1359,1423,1487,1551,1361,1425,1489,1553,1668,1732,1669,1733,1670,1734,1671,1735,1672,1736,1673,1737,1674,1738,1675,1739,1676,1740,1677,1741,1678,1742,1679,1743,1062,1126,1190,1254,1318,1382,1063,1127,1191,1255,1319,1383,1064,1128,1192,1256,1320,1384,1065,1129,1193,1257,1321,1385,1066,1130,1194,1258,1322,1386,1067,1131,1195,1259,1323,1387,872,936,1000,873,937,1001,1189,1253,1448,1449,1260,1196,1639,1703,1576,1640,1704,1768,1577,1641,1705,1769,1642,1706,1796,1860,1797,1861,1798,1862,1799,1863,1800,1864,1801,1865,1802,1866,1803,1867,1804,1868,1805,1869,1806,1870,1807,1871,1362,1426,1490,1554,1618,1616,1617,1680,1744,1808,1872,1936,1923,1924,1925,1926,1927,1928,1929,1930,1931,1932,1933,1934,1935,1603,1667,1731,1795,1859,1601,1602,1345,1409,1473,1537,707,771,835,899,963,1027,705,706,321,385,449,513,577,641,402,466,530,594,658,338,721,720,784,848,912,976,1040"
       }
     },
     {
@@ -108,6 +133,14 @@
       "variables": [],
       "effects": [],
       "behaviors": [
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen",
+          "MarginTop": 0,
+          "MarginBottom": 0,
+          "MarginLeft": 0,
+          "MarginRight": 0
+        },
         {
           "isFolded": true,
           "name": "TopDownMovement",
@@ -1063,6 +1096,268 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "0e53b88d211ce8c747dd5fbe67978a1aaa8abb376975e4e717038ba6a857a3f7",
+      "name": "BronzeSword",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "StayOnScreen",
+          "type": "StayOnScreen::StayOnScreen",
+          "MarginTop": 0,
+          "MarginBottom": 0,
+          "MarginLeft": 0,
+          "MarginRight": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "Attack",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.5,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bronze Sword",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Bronze Sword.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "0764a08413768f367be0163d300f94095de7e34ce435da06dc572d45bd851442",
+      "name": "Monster",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 5
+        }
+      ],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "TimedBackAndForthMirroredMovement",
+          "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement",
+          "Flippable": "Flippable",
+          "Vertical": false,
+          "Speed": 50,
+          "Distance": 50,
+          "Timeout": 4,
+          "StartPosition": 0,
+          "LastPosition": 0,
+          "Timecheck": 0
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Monster.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 18,
+                        "y": 0
+                      },
+                      {
+                        "x": 18,
+                        "y": 17
+                      },
+                      {
+                        "x": 0,
+                        "y": 17
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f5035ede934d2c710cde2b8228e57b891a5e5d0e51e737b9db1211542e4826e4",
+      "name": "Projectile3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 0,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "name": "Pathfinding",
+          "rotateObject": false,
+          "smoothingMaxCellGap": 1,
+          "type": "PathfindingBehavior::PathfindingBehavior"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Projectile 3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 10,
+                        "y": 0
+                      },
+                      {
+                        "x": 10,
+                        "y": 7
+                      },
+                      {
+                        "x": 0,
+                        "y": 7
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1073,6 +1368,15 @@
       },
       {
         "objectName": "DinoMort"
+      },
+      {
+        "objectName": "BronzeSword"
+      },
+      {
+        "objectName": "Monster"
+      },
+      {
+        "objectName": "Projectile3"
       }
     ]
   },
@@ -1180,6 +1484,218 @@
         }
       ],
       "parameters": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "CatacombTileMap",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "DinoMort",
+            "CatacombTileMap",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreXY"
+          },
+          "parameters": [
+            "BronzeSword",
+            "=",
+            "405",
+            "=",
+            "299"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Attack"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "KeyPressed"
+          },
+          "parameters": [
+            "",
+            "Space"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Projectile3",
+            "DinoMort.X() + 20",
+            "DinoMort.Y()",
+            "\"Background\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PathfindingBehavior::SetDestination"
+          },
+          "parameters": [
+            "Projectile3",
+            "Pathfinding",
+            "=",
+            "DinoMort.X() + 100",
+            "DinoMort.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "ResetObjectTimer"
+          },
+          "parameters": [
+            "Projectile3",
+            "\"Projectile_Lifespan\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Monster",
+            "Health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Monster",
+            "BronzeSword"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "Projectile3",
+            "Monster",
+            "",
+            "",
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "Monster",
+            "Health",
+            "-",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Projectile3",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CompareObjectTimer"
+          },
+          "parameters": [
+            "Projectile3",
+            "\"Projectile_Lifespan\"",
+            ">=",
+            "1"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Projectile3",
+            ""
+          ]
+        }
+      ]
     }
   ],
   "layers": [
@@ -1279,12 +1795,28 @@
       "type": "OpacityCapability::OpacityBehavior"
     },
     {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
       "name": "Resizable",
       "type": "ResizableCapability::ResizableBehavior"
     },
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
+    },
+    {
+      "name": "TimedBackAndForthMirroredMovement",
+      "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement"
     },
     {
       "name": "TopDownMovement",
