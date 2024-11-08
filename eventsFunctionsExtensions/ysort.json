@@ -1,0 +1,206 @@
+{
+  "author": "Gustavo Marciano",
+  "category": "Visual effect",
+  "extensionNamespace": "",
+  "fullName": "YSort",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLXNvcnQtYXNjZW5kaW5nIiB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCI+PHBhdGggZD0iTTE5IDE3SDIyTDE4IDIxTDE0IDE3SDE3VjNIMTlNMiAxN0gxMlYxOUgyTTYgNVY3SDJWNU0yIDExSDlWMTNIMlYxMVoiIC8+PC9zdmc+",
+  "name": "YSort",
+  "previewIconUrl": "https://resources.gdevelop-app.com/assets/Icons/sort-ascending.svg",
+  "shortDescription": "Create an illusion of depth by setting the Z-order based on the Y position of the object. Useful for isometric games, 2D games with a \"Top-Down\" view, RPG...",
+  "version": "0.1.0",
+  "description": [
+    "Set the depth (Z-order) of the instance to the value of its Y position in the scene, creating an illusion of depth. The origin point of the object is used to determine the Z-order.",
+    "",
+    "This is useful for:",
+    "- isometric games ([open the project online](https://editor.gdevelop.io/?project=example://isometric-game))",
+    "- top-down games ([open the project online](https://editor.gdevelop.io/?project=example://top-down-grid-movement))"
+  ],
+  "origin": {
+    "identifier": "YSort",
+    "name": "gdevelop-extension-store"
+  },
+  "tags": [
+    "z-order",
+    "y-sort",
+    "depth",
+    "fake-depth",
+    "isometric",
+    "rpg"
+  ],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [],
+  "eventsFunctions": [],
+  "eventsBasedBehaviors": [
+    {
+      "description": "Set the depth (Z-order) of the instance to the value of its Y position in the scene, creating an illusion of depth. The origin point of the object is used to determine the Z-order.",
+      "fullName": "YSort",
+      "name": "YSort",
+      "objectType": "",
+      "eventsFunctions": [
+        {
+          "fullName": "",
+          "functionType": "Action",
+          "name": "doStepPostEvents",
+          "sentence": "",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "This is done in doStepPostEvents because the sort must happens right before the rendering to avoid a 1 frame delay."
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangePlan"
+                  },
+                  "parameters": [
+                    "Object",
+                    "=",
+                    "Object.Y()"
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": [
+            {
+              "description": "Object",
+              "name": "Object",
+              "type": "object"
+            },
+            {
+              "description": "Behavior",
+              "name": "Behavior",
+              "supplementaryInformation": "YSort::YSort",
+              "type": "behavior"
+            }
+          ],
+          "objectGroups": []
+        }
+      ],
+      "propertyDescriptors": [],
+      "sharedPropertyDescriptors": []
+    }
+  ],
+  "eventsBasedObjects": [
+    {
+      "areaMaxX": 96,
+      "areaMaxY": 112,
+      "areaMaxZ": 0,
+      "areaMinX": 0,
+      "areaMinY": 0,
+      "areaMinZ": 0,
+      "defaultName": "",
+      "description": "",
+      "fullName": "",
+      "isUsingLegacyInstancesRenderer": false,
+      "name": "CatacombHole1",
+      "eventsFunctions": [],
+      "propertyDescriptors": [],
+      "objects": [
+        {
+          "assetStoreId": "",
+          "name": "CatacombTileMap",
+          "type": "TileMap::SimpleTileMap",
+          "variables": [],
+          "effects": [],
+          "behaviors": [
+            {
+              "name": "Platform",
+              "type": "PlatformBehavior::PlatformBehavior",
+              "canBeGrabbed": true,
+              "platformType": "NormalPlatform",
+              "yGrabOffset": 0
+            },
+            {
+              "name": "YSort",
+              "type": "YSort::YSort"
+            }
+          ],
+          "content": {
+            "atlasImage": "mainlevbuild.png",
+            "rowCount": 40,
+            "columnCount": 64,
+            "tileSize": 16,
+            "tilesWithHitBox": "708,709,710,711,712,713,714,715,716,717,718,719,323,387,451,515,579,643,336,400,464,528,592,656,272,259,1028,1029,1030,1031,1032,1033,1034,1035,1036,1037,1038,1039,1604,1347,1411,1475,1539,1605,1606,1607,1608,1609,1610,1611,1612,1613,1614,1615,1360,1424,1488,1552,260,261,262,263,264,265,266,267,268,269,270,271,258,273,324,388,452,516,580,644,325,389,453,517,581,645,326,390,454,518,582,646,327,391,455,519,583,647,328,392,456,520,584,648,329,393,457,521,585,649,330,394,458,522,586,650,331,395,459,523,587,651,332,396,460,524,588,652,333,397,461,525,589,653,334,398,462,526,590,654,335,399,463,527,591,655,772,836,900,964,773,837,901,965,774,838,902,966,775,839,903,967,776,840,904,968,777,841,905,969,778,842,906,970,779,843,907,971,780,844,908,972,781,845,909,973,782,846,910,974,783,847,911,975,1093,1157,1221,1094,1158,1222,1095,1159,1223,1096,1160,1224,1099,1163,1227,1100,1164,1228,1101,1165,1229,1102,1166,1230,1346,1410,1474,1538,322,386,450,514,578,642,337,401,465,529,593,657,1348,1412,1476,1540,1349,1413,1477,1541,1350,1414,1478,1542,1351,1415,1479,1543,1352,1416,1480,1544,1353,1417,1481,1545,1354,1418,1482,1546,1355,1419,1483,1547,1356,1420,1484,1548,1357,1421,1485,1549,1358,1422,1486,1550,1359,1423,1487,1551,1361,1425,1489,1553,1668,1732,1669,1733,1670,1734,1671,1735,1672,1736,1673,1737,1674,1738,1675,1739,1676,1740,1677,1741,1678,1742,1679,1743,1127,1191,1255,1319,1128,1192,1256,1320,1129,1193,1257,1321,1130,1194,1258,1322,872,936,1000,873,937,1001,1189,1253,1448,1449,1260,1196,1639,1703,1576,1640,1704,1768,1577,1641,1705,1769,1642,1706,1796,1860,1797,1861,1798,1862,1799,1863,1800,1864,1801,1865,1802,1866,1803,1867,1804,1868,1805,1869,1806,1870,1807,1871,1362,1426,1490,1554,1618,1616,1617,1680,1744,1808,1872,1936,1923,1924,1925,1926,1927,1928,1929,1930,1931,1932,1933,1934,1935,1603,1667,1731,1795,1859,1601,1602,1345,1409,1473,1537,707,771,835,899,963,1027,705,706,321,385,449,513,577,641,402,466,530,594,658,338,721,720,784,848,912,976,1040,281,345,349,285,601,665,729,415,351,733,669,605,731,667,603,352,353,354,355,356,420,421,422,357,358,293,294,677,678,744,746,748,749,684,685"
+          }
+        }
+      ],
+      "objectsFolderStructure": {
+        "folderName": "__ROOT",
+        "children": [
+          {
+            "objectName": "CatacombTileMap"
+          }
+        ]
+      },
+      "objectsGroups": [],
+      "layers": [
+        {
+          "ambientLightColorB": 200,
+          "ambientLightColorG": 200,
+          "ambientLightColorR": 200,
+          "camera3DFarPlaneDistance": 10000,
+          "camera3DFieldOfView": 45,
+          "camera3DNearPlaneDistance": 3,
+          "cameraType": "",
+          "followBaseLayerCamera": false,
+          "isLightingLayer": false,
+          "isLocked": false,
+          "name": "",
+          "renderingType": "",
+          "visibility": true,
+          "cameras": [
+            {
+              "defaultSize": true,
+              "defaultViewport": true,
+              "height": 0,
+              "viewportBottom": 1,
+              "viewportLeft": 0,
+              "viewportRight": 1,
+              "viewportTop": 0,
+              "width": 0
+            }
+          ],
+          "effects": []
+        }
+      ],
+      "instances": [
+        {
+          "angle": 0,
+          "customSize": false,
+          "height": 0,
+          "keepRatio": true,
+          "layer": "",
+          "name": "CatacombTileMap",
+          "persistentUuid": "3375cf4e-6426-4e2e-b1dd-39d2be9b84d1",
+          "width": 0,
+          "x": 0,
+          "y": 0,
+          "zOrder": 0,
+          "numberProperties": [],
+          "stringProperties": [
+            {
+              "name": "tilemap",
+              "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":6,\"dimY\":7,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[1062,1063,1064,1065,1066,1067],[1126,1127,1128,1129,1130,1131],[1190,1191,1192,1193,1194,1195],[1254,1255,1256,1257,1258,1259],[1318,1319,1320,1321,1322,1323],[1318,1322,1322,1322,1322,1323],[1382,1383,1384,1385,1386,1387]]}]}"
+            }
+          ],
+          "initialVariables": []
+        }
+      ]
+    }
+  ]
+}
