@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 3.2970866164312485,
+    "zoomFactor": 1.9394627155477948,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -29,7 +29,7 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Background",
+      "layer": "Main",
       "name": "CatacombTileMap",
       "persistentUuid": "d620ff0d-00de-43fe-929d-2ee7b9e0456a",
       "width": 0,
@@ -51,7 +51,7 @@
       "depth": 3,
       "height": 600,
       "keepRatio": true,
-      "layer": "Background",
+      "layer": "Main",
       "name": "CatacombTileMap",
       "persistentUuid": "e3576930-6e58-4042-a223-5077c15adedb",
       "width": 798,
@@ -72,13 +72,35 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Background",
+      "layer": "Main",
       "name": "DinoMort",
       "persistentUuid": "720c24a8-1b42-497a-9a83-af0e50382b5c",
       "width": 0,
       "x": 392,
       "y": 290,
       "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Armor",
+          "type": "number",
+          "value": 0
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Monster",
+      "persistentUuid": "556efc49-0c66-418c-9587-5ff1a87acb21",
+      "width": 0,
+      "x": 458,
+      "y": 295,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -88,13 +110,125 @@
       "customSize": false,
       "height": 0,
       "keepRatio": true,
-      "layer": "Background",
-      "name": "Monster",
-      "persistentUuid": "556efc49-0c66-418c-9587-5ff1a87acb21",
+      "layer": "HUD",
+      "name": "HealthBar",
+      "persistentUuid": "22f0d85c-61eb-4a1e-923e-a91479b76ec3",
       "width": 0,
-      "x": 458,
-      "y": 295,
-      "zOrder": 5,
+      "x": 11,
+      "y": -8,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "Armor_Bar",
+      "persistentUuid": "ccd44e53-db1c-4c6e-8857-8f3b162812f6",
+      "width": 0,
+      "x": 11,
+      "y": 14,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "7a2a4f74-c84f-4238-8fb8-fb1305c34b54",
+      "width": 0,
+      "x": 350,
+      "y": 235,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "aef84759-a664-4910-a161-cfa5e15dba97",
+      "width": 0,
+      "x": 319,
+      "y": 284,
+      "zOrder": 9,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "f4c59fc4-0d01-4762-a2de-bac5e392808c",
+      "width": 0,
+      "x": 352,
+      "y": 315,
+      "zOrder": 10,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "30fa7722-6177-4497-bcfb-69a000c8f838",
+      "width": 0,
+      "x": 386,
+      "y": 227,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "d25b9ddb-a73c-42bf-bcab-35ac883827ba",
+      "width": 0,
+      "x": 293,
+      "y": 251,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Armor_Item",
+      "persistentUuid": "5f718fac-d225-4974-bf94-c80855d4d71f",
+      "width": 0,
+      "x": 397,
+      "y": 308,
+      "zOrder": 13,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -130,9 +264,50 @@
       "name": "DinoMort",
       "type": "Sprite",
       "updateIfNotVisible": false,
-      "variables": [],
+      "variables": [
+        {
+          "name": "Health",
+          "type": "number",
+          "value": 100
+        },
+        {
+          "name": "Armor",
+          "type": "number",
+          "value": 100
+        }
+      ],
       "effects": [],
       "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 45,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
         {
           "name": "StayOnScreen",
           "type": "StayOnScreen::StayOnScreen",
@@ -1252,6 +1427,189 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "HealthBar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Health",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Health",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 27
+                      },
+                      {
+                        "x": 64,
+                        "y": 27
+                      },
+                      {
+                        "x": 64,
+                        "y": 36
+                      },
+                      {
+                        "x": 0,
+                        "y": 36
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Armor_Bar",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Armor_Bar",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Armor_Bar2",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 28
+                      },
+                      {
+                        "x": 64,
+                        "y": 28
+                      },
+                      {
+                        "x": 64,
+                        "y": 38
+                      },
+                      {
+                        "x": 0,
+                        "y": 38
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Armor_Item",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Armor_Item",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite3",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 18,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 28
+                      },
+                      {
+                        "x": 40,
+                        "y": 46
+                      },
+                      {
+                        "x": 18,
+                        "y": 46
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1268,6 +1626,15 @@
       },
       {
         "objectName": "Projectile3"
+      },
+      {
+        "objectName": "HealthBar"
+      },
+      {
+        "objectName": "Armor_Bar"
+      },
+      {
+        "objectName": "Armor_Item"
       }
     ]
   },
@@ -1284,7 +1651,7 @@
             "",
             "DinoMort",
             "",
-            "\"Background\"",
+            "\"Main\"",
             ""
           ]
         },
@@ -1306,7 +1673,7 @@
           "parameters": [
             "",
             "3",
-            "\"Background\"",
+            "\"Main\"",
             ""
           ]
         }
@@ -1406,24 +1773,6 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreXY"
-          },
-          "parameters": [
-            "BronzeSword",
-            "=",
-            "405",
-            "=",
-            "299"
-          ]
-        }
-      ]
-    },
-    {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -1464,7 +1813,7 @@
             "Projectile3",
             "DinoMort.X() + 20",
             "DinoMort.Y()",
-            "\"Background\""
+            "\"Main\""
           ]
         },
         {
@@ -1486,33 +1835,6 @@
           "parameters": [
             "Projectile3",
             "\"Projectile_Lifespan\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "NumberObjectVariable"
-          },
-          "parameters": [
-            "Monster",
-            "Health",
-            "=",
-            "0"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Monster",
-            "BronzeSword"
           ]
         }
       ]
@@ -1558,11 +1880,6 @@
     },
     {
       "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
           "type": {
@@ -1587,6 +1904,313 @@
           ]
         }
       ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Player Takes Damage (Collision Test)"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "-",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "<=",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Health",
+            "-",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Game Over\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Health & Armor Bar\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetX"
+          },
+          "parameters": [
+            "HealthBar",
+            "Scale",
+            "=",
+            "DinoMort.Variable(Health) / 25"
+          ]
+        },
+        {
+          "type": {
+            "value": "ScalableCapability::ScalableBehavior::SetX"
+          },
+          "parameters": [
+            "Armor_Bar",
+            "Scale",
+            "=",
+            "DinoMort.Variable(Armor) / 25"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Armor Item Function"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor_Item",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "<",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "+",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Armor_Item",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Comment",
+      "color": {
+        "b": 109,
+        "g": 230,
+        "r": 255,
+        "textB": 0,
+        "textG": 0,
+        "textR": 0
+      },
+      "comment": "Monster Dropping health/armor\n"
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "Monster",
+            "Health",
+            "=",
+            "0"
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "Monster",
+            "BronzeSword"
+          ]
+        },
+        {
+          "type": {
+            "value": "Create"
+          },
+          "parameters": [
+            "",
+            "Armor_Item",
+            "Monster.X()",
+            "Monster.Y()",
+            "\"Main\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": []
     }
   ],
   "layers": [
@@ -1601,7 +2225,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Background",
+      "name": "Main",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -1666,6 +2290,39 @@
           "booleanParameters": {}
         }
       ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "HUD",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
     }
   ],
   "behaviorsSharedData": [
@@ -1676,6 +2333,10 @@
     {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
     },
     {
       "name": "Flippable",
