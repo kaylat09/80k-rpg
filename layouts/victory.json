@@ -1,8 +1,8 @@
 {
   "b": 209,
   "disableInputWhenNotFocused": true,
-  "mangledName": "Game_32Over",
-  "name": "Game Over",
+  "mangledName": "Victory",
+  "name": "Victory",
   "r": 209,
   "standardSortMethod": true,
   "stopSoundsOnStartup": true,
@@ -53,14 +53,14 @@
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "GAME OVER!",
+      "string": "YOU WIN",
       "font": "",
       "textAlignment": "left",
       "characterSize": 20,
       "color": {
-        "b": 0,
-        "g": 0,
-        "r": 255
+        "b": 33,
+        "g": 211,
+        "r": 126
       },
       "content": {
         "bold": false,
@@ -76,12 +76,12 @@
         "shadowOpacity": 127,
         "smoothed": true,
         "underlined": false,
-        "text": "GAME OVER!",
+        "text": "YOU WIN",
         "font": "",
         "textAlignment": "left",
         "verticalTextAlignment": "top",
         "characterSize": 20,
-        "color": "255;0;0"
+        "color": "126;211;33"
       }
     }
   ],
@@ -142,12 +142,28 @@
   ],
   "behaviorsSharedData": [
     {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
       "name": "Effect",
       "type": "EffectCapability::EffectBehavior"
     },
     {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
       "name": "Opacity",
       "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
     },
     {
       "name": "Platform",
@@ -162,8 +178,24 @@
       "type": "ScalableCapability::ScalableBehavior"
     },
     {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
+    },
+    {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TimedBackAndForthMirroredMovement",
+      "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
     {
       "name": "YSort",
