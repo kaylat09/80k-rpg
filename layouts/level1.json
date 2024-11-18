@@ -18,11 +18,17 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.537658990994369,
+    "zoomFactor": 2.887474291019858,
     "windowMask": false
   },
   "objectsGroups": [],
-  "variables": [],
+  "variables": [
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
+    }
+  ],
   "instances": [
     {
       "angle": 0,
@@ -34,7 +40,7 @@
       "persistentUuid": "720c24a8-1b42-497a-9a83-af0e50382b5c",
       "width": 0,
       "x": 392,
-      "y": 290,
+      "y": 296,
       "zOrder": 4,
       "numberProperties": [],
       "stringProperties": [],
@@ -48,16 +54,17 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 17,
       "keepRatio": true,
       "layer": "Main",
       "name": "Monster",
       "persistentUuid": "556efc49-0c66-418c-9587-5ff1a87acb21",
-      "width": 0,
+      "width": 18,
       "x": 458,
       "y": 295,
-      "zOrder": 5,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -103,25 +110,26 @@
       "name": "IronChestplate",
       "persistentUuid": "0664dd3b-f98b-4c18-b290-ea9216da0a14",
       "width": 0,
-      "x": 419,
-      "y": 297,
-      "zOrder": 14,
+      "x": 432,
+      "y": 256,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 16,
       "keepRatio": true,
       "layer": "Main",
       "name": "IronChestplate",
       "persistentUuid": "f3ad407c-0153-4be1-b385-6f9546f1f071",
-      "width": 0,
-      "x": 420,
-      "y": 315,
-      "zOrder": 15,
+      "width": 16,
+      "x": 400,
+      "y": 256,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -135,9 +143,9 @@
       "name": "IronChestplate",
       "persistentUuid": "e0ccbfa2-e2ed-4974-85b2-89fd3c3a2754",
       "width": 0,
-      "x": 395,
-      "y": 315,
-      "zOrder": 16,
+      "x": 400,
+      "y": 240,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -151,9 +159,9 @@
       "name": "IronChestplate",
       "persistentUuid": "479ac4dd-f2ba-4c3d-816b-690ca16889a4",
       "width": 0,
-      "x": 420,
-      "y": 336,
-      "zOrder": 17,
+      "x": 432,
+      "y": 240,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -167,9 +175,9 @@
       "name": "IronChestplate",
       "persistentUuid": "6eabf995-d08a-4446-946a-f9506f0f0073",
       "width": 0,
-      "x": 396,
-      "y": 336,
-      "zOrder": 18,
+      "x": 400,
+      "y": 224,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -183,9 +191,9 @@
       "name": "IronChestplate",
       "persistentUuid": "59847e29-4b3b-4823-8035-487c1793e965",
       "width": 0,
-      "x": 422,
-      "y": 357,
-      "zOrder": 19,
+      "x": 432,
+      "y": 224,
+      "zOrder": 1000,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -201,12 +209,12 @@
       "width": 0,
       "x": 224,
       "y": 160,
-      "zOrder": -4,
+      "zOrder": -1000,
       "numberProperties": [],
       "stringProperties": [
         {
           "name": "tilemap",
-          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":20,\"dimY\":17,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,878,878,878,878,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,878,878,878,878,-1,-1,-1,-1,-1],[1326,1391,1391,1583,1326,1326,879,879,879,879,878,878,945,878,878,-1,-1,-1,-1,-1],[1326,1391,1391,1583,1326,1583,-1,-1,-1,-1,878,878,878,945,878,-1,-1,-1,-1,-1],[1326,1391,1326,1391,1326,1583,-1,-1,-1,-1,945,878,878,878,878,-1,-1,-1,-1,-1],[1199,1390,1390,1390,1583,1390,-1,-1,-1,-1,945,945,878,878,878,-1,-1,-1,-1,-1],[1519,1199,1390,1390,1390,1582,-1,-1,-1,-1,878,945,878,878,878,-1,-1,-1,-1,-1],[1199,1199,1582,1390,1582,1582,-1,-1,-1,-1,945,945,878,878,878,-1,-1,-1,-1,-1],[1583,1583,1390,1519,1519,1519,878,878,878,878,878,878,878,945,878,945,945,878,878,945],[1199,1519,1519,1327,1583,1583,1519,945,878,942,878,878,878,945,878,878,878,878,945,878],[1519,1199,1327,1519,1519,1519,1519,1519,878,878,878,878,945,878,878,878,945,878,945,945],[1199,1518,1519,1327,1519,1519,1519,878,1519,945,945,878,878,878,878,878,878,878,878,945],[1199,1199,1327,1327,1582,1582,-1,-1,-1,-1,945,878,878,878,945,-1,-1,-1,-1,-1],[1199,1199,1327,1327,1327,1582,-1,-1,-1,-1,878,878,878,878,945,-1,-1,-1,-1,-1],[1199,1199,1199,1582,1327,1327,-1,-1,-1,-1,878,878,878,945,945,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,945,878,878,878,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,945,945,878,878,-1,-1,-1,-1,-1]]}]}"
+          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":20,\"dimY\":17,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,878,878,878,878,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,878,878,878,878,-1,-1,-1,-1,-1],[1326,1391,1391,1583,1326,1326,452,453,454,455,456,457,458,459,460,461,462,453,454,463],[1326,1391,1391,1583,1326,1583,1099,1100,1101,1102,878,878,878,945,878,1099,1100,1101,1100,1102],[1326,1391,1326,1391,1326,1583,1163,1164,1165,1166,945,878,878,878,878,1163,1164,1165,1164,1166],[1199,1390,1390,1390,1583,1390,1163,1164,1165,1166,945,945,878,878,878,1163,1164,1165,1164,1166],[1519,1199,1390,1390,1390,1582,1163,1164,1165,1166,878,945,878,878,878,1163,1164,1165,1164,1166],[1199,1199,1582,1390,1582,1582,1227,1228,1229,1230,945,945,878,878,878,1227,1228,1229,1228,1230],[1583,1583,1390,1519,1099,1102,878,878,878,878,878,878,878,945,878,945,945,878,878,477],[1199,1519,1519,1327,1163,1166,1519,945,878,942,878,878,878,945,878,878,878,878,945,541],[1519,1199,1327,1519,1163,1166,1519,1519,878,878,878,878,945,878,878,878,945,878,945,605],[1199,1518,1519,1327,1227,1230,1519,878,1519,945,945,878,878,878,878,878,878,878,878,733],[1199,1199,1327,1327,1582,1582,1099,1100,1101,1102,1099,1100,1101,1100,1102,1099,1100,1101,1100,1102],[1199,1199,1327,1327,1327,1582,1163,1164,1165,1166,1163,1164,1165,1164,1166,1163,1164,1165,1164,1166],[1199,1199,1199,1582,1327,1327,1227,1228,1229,1230,1227,1228,1229,1228,1230,1227,1228,1229,1228,1230],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,945,878,878,878,-1,-1,-1,-1,-1],[-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,878,945,945,878,878,-1,-1,-1,-1,-1]]}]}"
         }
       ],
       "initialVariables": []
@@ -259,27 +267,6 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Main",
-      "name": "CatacombTileMap",
-      "persistentUuid": "d0fd0e6c-88e0-41b7-9929-b521222a2277",
-      "width": 0,
-      "x": -32,
-      "y": 224,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [
-        {
-          "name": "tilemap",
-          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":12,\"dimY\":14,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[331,331,331,78,453,454,777,778,454,454,1361,-1],[331,331,331,271,583,583,841,842,583,583,529,-1],[331,331,331,335,583,583,585,586,583,583,593,-1],[331,331,331,335,583,583,649,650,583,583,657,-1],[331,331,331,335,272,712,713,714,710,710,721,722],[331,331,331,335,466,-1,-1,-1,-1,-1,-1,-1],[331,331,331,335,466,-1,-1,-1,-1,-1,-1,-1],[331,331,331,335,466,-1,-1,-1,-1,-1,-1,-1],[331,331,331,72,197,197,197,197,197,197,197,-1],[331,331,331,331,331,331,331,331,331,331,331,-1],[331,331,331,331,331,331,331,331,331,331,331,-1],[331,331,331,331,331,331,331,331,331,331,331,-1],[331,331,331,331,331,331,331,331,331,331,331,-1],[331,331,331,331,331,331,331,331,331,331,331,-1]]}]}"
-        }
-      ],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Main",
       "name": "CatacombHole2",
       "persistentUuid": "4f37598a-5d70-46f6-9d6c-d0a928c0b5b9",
       "width": 0,
@@ -289,1357 +276,25 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "RedPotion",
+      "persistentUuid": "0a87e8a6-60a1-42da-a967-a85b02f5b218",
+      "width": 0,
+      "x": 368,
+      "y": 320,
+      "zOrder": 1001,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "3fb273ffe77ca5ae776a6e86cde912815bac35d53e5cbfb869940edd534dee97",
-      "name": "DinoMort",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 100
-        },
-        {
-          "name": "Armor",
-          "type": "number",
-          "value": 100
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "FireBullet",
-          "type": "FireBullet::FireBullet",
-          "FireCooldown": 0.1,
-          "HasJustFired": false,
-          "RotateBullet": true,
-          "FiringArc": 45,
-          "BulletQuantity": 1,
-          "AngleVariance": 0,
-          "BulletSpeedVariance": 0,
-          "AmmoQuantity": 0,
-          "ShotsPerReload": 0,
-          "ReloadDuration": 1,
-          "MaxAmmo": 0,
-          "ShotsBeforeNextReload": 0,
-          "TotalShotsFired": 0,
-          "TotalBulletsCreated": 0,
-          "StartingAmmo": 0,
-          "TotalReloadsCompleted": 0,
-          "UnlimitedAmmo": true,
-          "ReloadInProgress": false,
-          "HeatIncreasePerShot": 0,
-          "HeatLevel": 0,
-          "AutomaticReloading": true,
-          "OverheatDuration": 0,
-          "LinearCoolingRate": 0.1,
-          "ExponentialCoolingRate": 0.3,
-          "BulletLayer": "",
-          "RandomizedAngle": 0
-        },
-        {
-          "name": "SmoothCamera",
-          "type": "SmoothCamera::SmoothCamera",
-          "LeftwardSpeed": 0.9,
-          "RightwardSpeed": 0.9,
-          "UpwardSpeed": 0.9,
-          "DownwardSpeed": 0.9,
-          "FollowOnX": true,
-          "FollowOnY": true,
-          "FollowFreeAreaLeft": 0,
-          "FollowFreeAreaRight": 0,
-          "FollowFreeAreaTop": 0,
-          "FollowFreeAreaBottom": 0,
-          "CameraOffsetX": 0,
-          "CameraOffsetY": 0,
-          "CameraDelay": 0,
-          "ForecastTime": 0,
-          "ForecastHistoryDuration": 0,
-          "LogLeftwardSpeed": 2.0247e-320,
-          "LogRightwardSpeed": 2.0247e-320,
-          "LogDownwardSpeed": 2.0247e-320,
-          "LogUpwardSpeed": 2.0247e-320,
-          "DelayedCenterX": 2.0247e-320,
-          "DelayedCenterY": 2.0247e-320,
-          "ForecastHistoryMeanX": 2.0247e-320,
-          "ForecastHistoryMeanY": 2.0247e-320,
-          "ForecastHistoryVarianceX": 2.0247e-320,
-          "ForecastHistoryCovariance": 2.0247e-320,
-          "ForecastHistoryLinearA": 2.0247e-320,
-          "ForecastHistoryLinearB": 2.0247e-320,
-          "ForecastedX": 2.0247e-320,
-          "ForecastedY": 2.0247e-320,
-          "ProjectedNewestX": 2.0247e-320,
-          "ProjectedNewestY": 2.0247e-320,
-          "ProjectedOldestX": 2.0247e-320,
-          "ProjectedOldestY": 2.0247e-320,
-          "ForecastHistoryVarianceY": 2.0247e-320,
-          "Index": 2.0247e-320,
-          "CameraDelayCatchUpSpeed": 0,
-          "CameraExtraDelay": 2.0247e-320,
-          "WaitingSpeedXMax": 2.0247e-320,
-          "WaitingSpeedYMax": 2.0247e-320,
-          "WaitingEnd": 2.0247e-320,
-          "CameraDelayCatchUpDuration": 2.0247e-320,
-          "LeftwardSpeedMax": 9000,
-          "RightwardSpeedMax": 9000,
-          "UpwardSpeedMax": 9000,
-          "DownwardSpeedMax": 9000,
-          "OldX": 9000.000000007454,
-          "OldY": 9000.000000007454,
-          "IsCalledManually": false
-        },
-        {
-          "name": "StayOnScreen",
-          "type": "StayOnScreen::StayOnScreen",
-          "MarginTop": 0,
-          "MarginBottom": 0,
-          "MarginLeft": 0,
-          "MarginRight": 0
-        },
-        {
-          "isFolded": true,
-          "name": "TopDownMovement",
-          "type": "TopDownMovementBehavior::TopDownMovementBehavior",
-          "acceleration": 900000,
-          "deceleration": 900000,
-          "maxSpeed": 70,
-          "allowDiagonals": false,
-          "angleOffset": 0,
-          "angularMaxSpeed": 180,
-          "customIsometryAngle": 30,
-          "ignoreDefaultControls": false,
-          "movementAngleOffset": 0,
-          "rotateObject": false,
-          "viewpoint": "TopDown"
-        },
-        {
-          "name": "YSort",
-          "type": "YSort::YSort"
-        }
-      ],
-      "animations": [
-        {
-          "name": "Idle",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Idle_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Idle_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Idle_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Idle_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Crouch",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Crouch.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Hurt",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.125,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Hurt_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Hurt_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Hurt_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Hurt_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Kick",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "timeBetweenFrames": 0.1667,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Kick_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Kick_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Kick_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Move",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.0833,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Move_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "name": "Sneak",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.0833,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_1.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_2.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_4.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_5.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Dino Mort_Sneak_6.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 6,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 4
-                      },
-                      {
-                        "x": 21,
-                        "y": 21
-                      },
-                      {
-                        "x": 6,
-                        "y": 21
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "0764a08413768f367be0163d300f94095de7e34ce435da06dc572d45bd851442",
-      "name": "Monster",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [
-        {
-          "name": "Health",
-          "type": "number",
-          "value": 5
-        }
-      ],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "TimedBackAndForthMirroredMovement",
-          "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement",
-          "Flippable": "Flippable",
-          "Vertical": false,
-          "Speed": 50,
-          "Distance": 50,
-          "Timeout": 4,
-          "StartPosition": 0,
-          "LastPosition": 0,
-          "Timecheck": 0
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Monster.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 18,
-                        "y": 0
-                      },
-                      {
-                        "x": 18,
-                        "y": 17
-                      },
-                      {
-                        "x": 0,
-                        "y": 17
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "f5035ede934d2c710cde2b8228e57b891a5e5d0e51e737b9db1211542e4826e4",
-      "name": "Projectile3",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Pathfinding",
-          "type": "PathfindingBehavior::PathfindingBehavior",
-          "acceleration": 400,
-          "allowDiagonals": true,
-          "angleOffset": 0,
-          "angularMaxSpeed": 0,
-          "cellHeight": 20,
-          "cellWidth": 20,
-          "extraBorder": 0,
-          "gridOffsetX": 0,
-          "gridOffsetY": 0,
-          "maxSpeed": 200,
-          "rotateObject": false,
-          "smoothingMaxCellGap": 1
-        }
-      ],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Projectile 3.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 10,
-                        "y": 0
-                      },
-                      {
-                        "x": 10,
-                        "y": 7
-                      },
-                      {
-                        "x": 0,
-                        "y": 7
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "HealthBar",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Health",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Health",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 27
-                      },
-                      {
-                        "x": 64,
-                        "y": 27
-                      },
-                      {
-                        "x": 64,
-                        "y": 36
-                      },
-                      {
-                        "x": 0,
-                        "y": 36
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Armor_Bar",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Armor_Bar",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Armor_Bar2",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 28
-                      },
-                      {
-                        "x": 64,
-                        "y": 28
-                      },
-                      {
-                        "x": 64,
-                        "y": 38
-                      },
-                      {
-                        "x": 0,
-                        "y": 38
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
@@ -1871,66 +526,6 @@
                       {
                         "x": 0,
                         "y": 16
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "eaa4a978b8920bc56bfbf28ef221453de3ad8e1d3a6dbb23394dc8d64972915a",
-      "name": "IronChestplate",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Iron Chestplate.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 1,
-                        "y": 2
-                      },
-                      {
-                        "x": 15,
-                        "y": 2
-                      },
-                      {
-                        "x": 15,
-                        "y": 15
-                      },
-                      {
-                        "x": 1,
-                        "y": 15
                       }
                     ]
                   ]
@@ -2483,66 +1078,6 @@
     },
     {
       "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "6e0b7b3dba53198b4663ad69c419d474cde38e6278c1fb20db69be5a44c00586",
-      "name": "RedPotion",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": true,
-              "timeBetweenFrames": 0.025,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Red Potion.png",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 3,
-                        "y": 1
-                      },
-                      {
-                        "x": 13,
-                        "y": 1
-                      },
-                      {
-                        "x": 13,
-                        "y": 14
-                      },
-                      {
-                        "x": 3,
-                        "y": 14
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "5a98c3fb524283afae6e89d1f5627e3fa688048cafb577282c8cd045ed4ad412",
       "name": "Ruby",
       "type": "Sprite",
@@ -2729,7 +1264,18 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [],
+      "behaviors": [
+        {
+          "name": "Boomerang",
+          "type": "Boomerang::Boomerang",
+          "ThrowSpeed": 100,
+          "ReturnTime": 1,
+          "Rotation": 360,
+          "ThrowerX": 0,
+          "ThrowerY": 0,
+          "BoomerangReturning": false
+        }
+      ],
       "animations": [
         {
           "name": "",
@@ -2812,25 +1358,7 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "DinoMort"
-      },
-      {
-        "objectName": "Monster"
-      },
-      {
-        "objectName": "Projectile3"
-      },
-      {
-        "objectName": "HealthBar"
-      },
-      {
-        "objectName": "Armor_Bar"
-      },
-      {
         "objectName": "Armor_Item"
-      },
-      {
-        "objectName": "IronChestplate"
       },
       {
         "objectName": "IronLeggings"
@@ -2870,9 +1398,6 @@
       },
       {
         "objectName": "Ruby"
-      },
-      {
-        "objectName": "RedPotion"
       },
       {
         "objectName": "Apple"
@@ -2925,6 +1450,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3014,137 +1540,481 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Attack"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Projectile Attack",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "KeyPressed"
-          },
-          "parameters": [
-            "",
-            "Space"
-          ]
+          "colorB": 5,
+          "colorG": 117,
+          "colorR": 65,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Attack Mechanic",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Projectile_Lifespan\"",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"left\""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "FireBullet",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "Projectile3",
+                    "DinoMort.X() - 100",
+                    "DinoMort.Y()",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Projectile_Lifespan\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"down\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "FireBullet",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "Projectile3",
+                    "DinoMort.X()",
+                    "DinoMort.Y() + 100",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Projectile_Lifespan\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"up\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "FireBullet",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "Projectile3",
+                    "DinoMort.X()",
+                    "DinoMort.Y() - 100",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Projectile_Lifespan\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Space"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "StringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"right\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "FireBullet",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "Projectile3",
+                    "DinoMort.X() + 100",
+                    "DinoMort.Y()",
+                    "300",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Projectile_Lifespan\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
         },
         {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
+          "colorB": 5,
+          "colorG": 117,
+          "colorR": 65,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Setting Direction Variables for Projectile",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "Left"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"left\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "Right"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"right\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "Up"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"up\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "Down"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "LastDirection",
+                    "=",
+                    "\"down\""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 5,
+          "colorG": 117,
+          "colorR": 65,
+          "creationTime": 0,
+          "folded": true,
+          "name": "Attacking Monsters",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CollisionNP"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "Monster",
+                    "",
+                    "",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Monster",
+                    "Health",
+                    "-",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Delete"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 5,
+          "colorG": 117,
+          "colorR": 65,
+          "creationTime": 0,
+          "folded": true,
+          "name": "No Conditions",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ChangeLayer"
+                  },
+                  "parameters": [
+                    "Projectile3",
+                    "\"Main\""
+                  ]
+                }
+              ]
+            }
+          ],
           "parameters": []
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "Create"
-          },
-          "parameters": [
-            "",
-            "Projectile3",
-            "DinoMort.X() + 20",
-            "DinoMort.Y()",
-            "\"Main\""
-          ]
-        },
-        {
-          "type": {
-            "value": "PathfindingBehavior::SetDestination"
-          },
-          "parameters": [
-            "Projectile3",
-            "Pathfinding",
-            "=",
-            "DinoMort.X() + 100",
-            "DinoMort.Y()"
-          ]
-        },
-        {
-          "type": {
-            "value": "ResetObjectTimer"
-          },
-          "parameters": [
-            "Projectile3",
-            "\"Projectile_Lifespan\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Projectile3",
-            "Monster",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "Monster",
-            "Health",
-            "-",
-            "1"
-          ]
-        },
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Projectile3",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CompareObjectTimer"
-          },
-          "parameters": [
-            "Projectile3",
-            "\"Projectile_Lifespan\"",
-            ">=",
-            "1"
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Delete"
-          },
-          "parameters": [
-            "Projectile3",
-            ""
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "type": "BuiltinCommonInstructions::Comment",
@@ -3398,6 +2268,62 @@
       ]
     },
     {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "RedPotion",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Health",
+            "<",
+            "100"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Health",
+            "+",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "Delete"
+          },
+          "parameters": [
+            "RedPotion",
+            ""
+          ]
+        }
+      ]
+    },
+    {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -3447,11 +2373,6 @@
           ]
         }
       ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
     }
   ],
   "layers": [
@@ -3481,39 +2402,6 @@
           "width": 0
         }
       ],
-      "effects": [
-        {
-          "effectType": "Scene3D::HemisphereLight",
-          "name": "3D Light",
-          "doubleParameters": {
-            "elevation": 45,
-            "intensity": 1,
-            "rotation": 0
-          },
-          "stringParameters": {
-            "groundColor": "64;64;64",
-            "skyColor": "255;255;255",
-            "top": "Y-"
-          },
-          "booleanParameters": {}
-        }
-      ]
-    },
-    {
-      "ambientLightColorB": 200,
-      "ambientLightColorG": 200,
-      "ambientLightColorR": 200,
-      "camera3DFarPlaneDistance": 10000,
-      "camera3DFieldOfView": 45,
-      "camera3DNearPlaneDistance": 3,
-      "cameraType": "",
-      "followBaseLayerCamera": false,
-      "isLightingLayer": false,
-      "isLocked": false,
-      "name": "Main",
-      "renderingType": "",
-      "visibility": true,
-      "cameras": [],
       "effects": [
         {
           "effectType": "Scene3D::HemisphereLight",
@@ -3576,6 +2464,39 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
+      "name": "Main",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
       "name": "HUD",
       "renderingType": "",
       "visibility": true,
@@ -3603,6 +2524,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Boomerang",
+      "type": "Boomerang::Boomerang"
     },
     {
       "name": "Effect",

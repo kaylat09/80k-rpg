@@ -1968,7 +1968,7 @@
               "type": "behavior"
             },
             {
-              "description": "Layer",
+              "description": "Label",
               "name": "Value",
               "type": "layer"
             }
