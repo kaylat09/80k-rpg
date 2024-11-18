@@ -1789,6 +1789,66 @@
         "name": "NewSprite5",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "step1.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "step1.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "step2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "step2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "step3.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "step3.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "step4.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "step4.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "battle-time-178551.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "battle-time-178551.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "8bit Dungeon Level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8bit Dungeon Level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
