@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9350055057185639,
+    "zoomFactor": 0.9045052888202252,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -303,7 +303,7 @@
       "persistentUuid": "6856eb64-89ad-4a6b-b35b-e5f78b54a708",
       "width": 0,
       "x": 384,
-      "y": 384,
+      "y": 368,
       "zOrder": 1004,
       "numberProperties": [],
       "stringProperties": [],
@@ -1684,38 +1684,38 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "DinoMort",
+                "CatacombTileMap",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "DinoMort",
+                "CatacombTileMap",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "DinoMort",
-            "CatacombTileMap",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "DinoMort",
-            "CatacombTileMap",
-            ""
-          ]
-        }
-      ]
     },
     {
       "colorB": 228,
