@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9350055057185639,
+    "zoomFactor": 2.3664633378812208,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1368,6 +1368,17 @@
       "variables": [],
       "effects": [],
       "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "NewSprite",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": []
     }
   ],
   "objectsFolderStructure": {
@@ -1429,6 +1440,9 @@
       },
       {
         "objectName": "playerSpawn"
+      },
+      {
+        "objectName": "NewSprite"
       }
     ]
   },
@@ -1722,7 +1736,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Projectile Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2000,7 +2013,6 @@
           "colorG": 117,
           "colorR": 65,
           "creationTime": 0,
-          "folded": true,
           "name": "Setting Direction Variables for Projectile",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2014,7 +2026,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Left"
+                    "a"
                   ]
                 }
               ],
@@ -2040,7 +2052,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Right"
+                    "d"
                   ]
                 }
               ],
@@ -2066,7 +2078,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Up"
+                    "w"
                   ]
                 }
               ],
@@ -2092,7 +2104,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Down"
+                    "s"
                   ]
                 }
               ],
