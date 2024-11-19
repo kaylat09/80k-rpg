@@ -129,6 +129,10 @@
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
     {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    },
+    {
       "name": "YSort",
       "type": "YSort::YSort"
     }

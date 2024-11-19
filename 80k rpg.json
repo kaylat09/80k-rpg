@@ -1789,6 +1789,46 @@
         "name": "NewSprite5",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "8bit Dungeon Level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8bit Dungeon Level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "8-bit-dungeon-251388.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8-bit-dungeon-251388.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "battle-time-178551.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "battle-time-178551.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "8bit Dungeon Level2.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "8bit Dungeon Level2.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
