@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.7557887513007222,
+    "zoomFactor": 1.0676438397327974,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -214,9 +214,41 @@
       "name": "NewSprite",
       "persistentUuid": "6428fca4-23c0-45f1-bc01-67182ea829e6",
       "width": 0,
-      "x": 379,
-      "y": -12,
+      "x": 29,
+      "y": 537,
       "zOrder": 1010,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "HealthBar",
+      "persistentUuid": "957b0798-b833-40be-8cd5-ac83638c566c",
+      "width": 0,
+      "x": 13,
+      "y": -15,
+      "zOrder": 1011,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "HUD",
+      "name": "Armor_Bar",
+      "persistentUuid": "722c5255-a543-422c-ae6a-5c5b6b0c371e",
+      "width": 0,
+      "x": 13,
+      "y": 2,
+      "zOrder": 1012,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -684,6 +716,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Projectile Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -961,7 +994,6 @@
           "colorG": 117,
           "colorR": 65,
           "creationTime": 0,
-          "folded": true,
           "name": "Setting Direction Variables for Projectile",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -975,7 +1007,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Left"
+                    "a"
                   ]
                 }
               ],
@@ -1001,7 +1033,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Right"
+                    "d"
                   ]
                 }
               ],
@@ -1027,7 +1059,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Up"
+                    "w"
                   ]
                 }
               ],
@@ -1053,7 +1085,7 @@
                   },
                   "parameters": [
                     "DinoMort",
-                    "Down"
+                    "s"
                   ]
                 }
               ],
@@ -1473,63 +1505,147 @@
       "type": "BuiltinCommonInstructions::Group",
       "events": [
         {
-          "type": "BuiltinCommonInstructions::Standard",
-          "conditions": [
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Phase Transitions",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
             {
-              "type": {
-                "value": "NumberObjectVariable"
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
               },
-              "parameters": [
-                "Boss",
-                "Health",
-                "<=",
-                "450"
+              "comment": "Phase 1"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Health",
+                    ">",
+                    "450"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "0"
+                  ]
+                }
               ]
             },
             {
-              "type": {
-                "value": "BuiltinCommonInstructions::Once"
-              },
-              "parameters": []
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Health",
+                    "<=",
+                    "450"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AttackTimer\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Health",
+                    "<=",
+                    "350"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AttackTimer\""
+                  ]
+                }
+              ]
             }
           ],
-          "actions": [
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
-              },
-              "parameters": [
-                "Boss",
-                "Tween",
-                "\"right-center-x\"",
-                "535",
-                "\"easeInQuad\"",
-                "1",
-                ""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
-              },
-              "parameters": [
-                "Boss",
-                "Tween",
-                "\"right-center-y\"",
-                "308",
-                "\"easeInQuad\"",
-                "1",
-                ""
-              ]
-            }
-          ]
+          "parameters": []
         },
         {
           "colorB": 228,
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Phase 1",
+          "folded": true,
+          "name": "Phase 0",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
@@ -1544,7 +1660,7 @@
                     "Boss",
                     "Phase",
                     "=",
-                    "1"
+                    "0"
                   ]
                 },
                 {
@@ -1584,7 +1700,7 @@
                     "Boss",
                     "FireBullet",
                     "=",
-                    "1",
+                    "0.5",
                     ""
                   ]
                 }
@@ -1602,6 +1718,17 @@
                     "\"AttackTimer\"",
                     ">=",
                     "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "0"
                   ]
                 }
               ],
@@ -1632,7 +1759,7 @@
                     "Boss.X() + 10",
                     "Boss.Y()",
                     "Boss_Projectile",
-                    "DinoMort.X() + 50",
+                    "DinoMort.X() + 75",
                     "DinoMort.Y()",
                     "200",
                     ""
@@ -1648,7 +1775,7 @@
                     "Boss.X() - 10",
                     "Boss.Y()",
                     "Boss_Projectile",
-                    "DinoMort.X() - 50",
+                    "DinoMort.X() - 75",
                     "DinoMort.Y()",
                     "200",
                     ""
@@ -1693,10 +1820,22 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "name": "Knockback Physics",
+          "name": "Phase 1",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
           "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Knockback Transition"
+            },
             {
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
@@ -1706,9 +1845,9 @@
                   },
                   "parameters": [
                     "Boss",
-                    "Health",
-                    "<",
-                    "400"
+                    "Phase",
+                    "=",
+                    "1"
                   ]
                 },
                 {
@@ -1733,6 +1872,17 @@
                     "0.2",
                     "no"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Knockback",
+                    "=",
+                    "1"
+                  ]
                 }
               ]
             },
@@ -1749,6 +1899,17 @@
                     "",
                     "",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Knockback",
+                    "=",
+                    "1"
                   ]
                 }
               ],
@@ -1781,11 +1942,524 @@
                     "0.7",
                     ""
                   ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Tween",
+                    "\"right-center-x\"",
+                    "535",
+                    "\"easeInQuad\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Tween",
+                    "\"right-center-y\"",
+                    "308",
+                    "\"easeInQuad\"",
+                    "1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Knockback",
+                    "=",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Attack Pattern"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X()",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X()",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X()",
+                    "DinoMort.Y() - 75",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X()",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X()",
+                    "DinoMort.Y() + 75",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "=",
+                    "0.5",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": []
+            }
+          ],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Phase 2",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Invincible State Transition"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Phase",
+                    "=",
+                    "2"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionXTween2"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Tween",
+                    "\"middle-x\"",
+                    "365",
+                    "\"linear\"",
+                    "0.1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Tween",
+                    "\"middle-y\"",
+                    "290",
+                    "\"linear\"",
+                    "0.1",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Animation",
+                    "=",
+                    "\"Invincible\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AnimationTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "InvincibleAttack",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AnimationTimer\"",
+                    ">=",
+                    "30"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "AnimatableCapability::AnimatableBehavior::SetName"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "Animation",
+                    "=",
+                    "\"NewSprite\""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Comment",
+              "color": {
+                "b": 109,
+                "g": 230,
+                "r": 255,
+                "textB": 0,
+                "textG": 0,
+                "textR": 0
+              },
+              "comment": "Invincible Attack Pattern"
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberObjectVariable"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "InvincibleAttack",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::SetCooldownOp"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "=",
+                    "2",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "90",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "-90",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "-135",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "-45",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "45",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "135",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "-180",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::Fire"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 23",
+                    "Boss.Y() + 25",
+                    "Boss_Projectile",
+                    "360",
+                    "200",
+                    ""
+                  ]
                 }
               ]
             }
           ],
           "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Knockback Physics",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "colorB": 228,
+          "colorG": 176,
+          "colorR": 74,
+          "creationTime": 0,
+          "name": "Boss Collision (Knockback)",
+          "source": "",
+          "type": "BuiltinCommonInstructions::Group",
+          "events": [],
+          "parameters": []
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Boss",
+                "DinoMort",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectAngleTween2"
+              },
+              "parameters": [
+                "DinoMort",
+                "Tween",
+                "\"Knockback\"",
+                "Boss.Angle() + 360",
+                "\"linear\"",
+                "0.3",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionTween2"
+              },
+              "parameters": [
+                "DinoMort",
+                "Tween",
+                "\"knockback\"",
+                "Boss.X() - 150",
+                "DinoMort.Y()",
+                "\"linear\"",
+                "0.7",
+                ""
+              ]
+            }
+          ]
         },
         {
           "colorB": 228,
@@ -1819,6 +2493,28 @@
                 "Boss",
                 "\"AttackTimer\""
               ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Boss",
+                "Phase",
+                "=",
+                "0"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "Boss",
+                "Knockback",
+                "=",
+                "0"
+              ]
             }
           ]
         },
@@ -1827,7 +2523,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Basic Mechanics",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
