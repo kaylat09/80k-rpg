@@ -1546,6 +1546,17 @@
                     "=",
                     "1"
                   ]
+                },
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AttackTimer\"",
+                    "<",
+                    "2"
+                  ]
                 }
               ],
               "actions": [
@@ -1577,6 +1588,72 @@
                     ""
                   ]
                 }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "CompareObjectTimer"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "\"AttackTimer\"",
+                    ">=",
+                    "2"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X()",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X()",
+                    "DinoMort.Y()",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() + 10",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X() + 50",
+                    "DinoMort.Y()",
+                    "200",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "FireBullet::FireBullet::FireTowardPosition"
+                  },
+                  "parameters": [
+                    "Boss",
+                    "FireBullet",
+                    "Boss.X() - 10",
+                    "Boss.Y()",
+                    "Boss_Projectile",
+                    "DinoMort.X() - 50",
+                    "DinoMort.Y()",
+                    "200",
+                    ""
+                  ]
+                }
               ],
               "events": [
                 {
@@ -1584,85 +1661,24 @@
                   "conditions": [
                     {
                       "type": {
-                        "value": "AnimatableCapability::AnimatableBehavior::ElapsedTime"
+                        "value": "CompareObjectTimer"
                       },
                       "parameters": [
                         "Boss",
-                        "Animation",
-                        "=",
-                        "2"
+                        "\"AttackTimer\"",
+                        ">=",
+                        "3"
                       ]
                     }
                   ],
                   "actions": [
                     {
                       "type": {
-                        "value": "SetNumberObjectVariable"
+                        "value": "ResetObjectTimer"
                       },
                       "parameters": [
                         "Boss",
-                        "AttackTimer",
-                        "=",
-                        "0"
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X()",
-                        "Boss.Y()",
-                        "Boss_Projectile",
-                        "DinoMort.X()",
-                        "DinoMort.Y()",
-                        "200",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X() +300",
-                        "Boss.Y()",
-                        "Boss_Projectile",
-                        "DinoMort.X()",
-                        "DinoMort.Y()",
-                        "200",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "FireBullet::FireBullet::FireTowardPosition"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "FireBullet",
-                        "Boss.X() - 300",
-                        "Boss.Y()",
-                        "Boss_Projectile",
-                        "DinoMort.X()",
-                        "DinoMort.Y()",
-                        "200",
-                        ""
-                      ]
-                    },
-                    {
-                      "type": {
-                        "value": "SetNumberObjectVariable"
-                      },
-                      "parameters": [
-                        "Boss",
-                        "AttackTimer",
-                        "=",
-                        "0"
+                        "\"AttackTimer\""
                       ]
                     }
                   ]
@@ -1797,13 +1813,11 @@
           "actions": [
             {
               "type": {
-                "value": "SetNumberObjectVariable"
+                "value": "ResetObjectTimer"
               },
               "parameters": [
                 "Boss",
-                "AttackTimer",
-                "+",
-                "TimeDelta()"
+                "\"AttackTimer\""
               ]
             }
           ]
