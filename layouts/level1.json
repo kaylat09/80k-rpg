@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.7412978919222515,
+    "zoomFactor": 0.904505288820228,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1683,7 +1683,7 @@
           },
           "parameters": [
             "",
-            "8bit Dungeon Level.mp3",
+            "assets\\8bit Dungeon Level.mp3",
             "yes",
             "100",
             "1"

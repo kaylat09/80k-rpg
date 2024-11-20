@@ -752,7 +752,7 @@
           },
           "parameters": [
             "",
-            "8bit Dungeon Level.mp3",
+            "assets\\8bit Dungeon Level.mp3",
             "yes",
             "100",
             "1"
@@ -831,7 +831,7 @@
           },
           "parameters": [
             "",
-            "19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+            "assets\\1up 1.aac",
             "",
             "50",
             "1"
@@ -914,7 +914,7 @@
           },
           "parameters": [
             "",
-            "19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+            "assets\\1up 1.aac",
             "",
             "50",
             "1"

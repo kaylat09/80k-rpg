@@ -2540,6 +2540,45 @@
         "name": "BossDoor",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/mainlevbuild.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\mainlevbuild.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/8bit Dungeon Level.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\8bit Dungeon Level.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/8-bit-dungeon-251388.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\8-bit-dungeon-251388.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1up 1.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\1up 1.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -2565,7 +2604,7 @@
         }
       ],
       "content": {
-        "atlasImage": "mainlevbuild.png",
+        "atlasImage": "assets\\mainlevbuild.png",
         "rowCount": 40,
         "columnCount": 64,
         "tileSize": 16,
@@ -4090,7 +4129,7 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "atlasImage": "mainlevbuild.png",
+        "atlasImage": "assets\\mainlevbuild.png",
         "rowCount": 40,
         "columnCount": 64,
         "tileSize": 16,
