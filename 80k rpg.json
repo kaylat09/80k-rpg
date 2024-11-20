@@ -16,7 +16,7 @@
     "pixelsRounding": true,
     "projectUuid": "90843a45-0ca5-4dcd-b538-a7e6e946517f",
     "scaleMode": "nearest",
-    "sizeOnStartupMode": "adaptWidth",
+    "sizeOnStartupMode": "",
     "templateSlug": "",
     "useExternalSourceFiles": false,
     "version": "1.0.0",
@@ -29,7 +29,35 @@
     "maxFPS": 60,
     "minFPS": 20,
     "verticalSync": false,
-    "platformSpecificAssets": {},
+    "platformSpecificAssets": {
+      "android-icon-144": "",
+      "android-icon-192": "",
+      "android-icon-36": "",
+      "android-icon-48": "",
+      "android-icon-72": "",
+      "android-icon-96": "",
+      "android-windowSplashScreenAnimatedIcon": "",
+      "desktop-icon-512": "",
+      "ios-icon-100": "",
+      "ios-icon-1024": "",
+      "ios-icon-114": "",
+      "ios-icon-120": "",
+      "ios-icon-144": "",
+      "ios-icon-152": "",
+      "ios-icon-167": "",
+      "ios-icon-180": "",
+      "ios-icon-20": "",
+      "ios-icon-29": "",
+      "ios-icon-40": "",
+      "ios-icon-50": "",
+      "ios-icon-57": "",
+      "ios-icon-58": "",
+      "ios-icon-60": "",
+      "ios-icon-72": "",
+      "ios-icon-76": "",
+      "ios-icon-80": "",
+      "ios-icon-87": ""
+    },
     "loadingScreen": {
       "backgroundColor": 0,
       "backgroundFadeInDuration": 0.2,
@@ -2341,6 +2369,177 @@
         "name": "Invincible4",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/Kenney Mini Square.ttf",
+        "kind": "font",
+        "metadata": "",
+        "name": "5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Menu buttons/5e2e3fcc57885d5e510934e621be5f8dd7a5b6425cf46ef38073e3d2c3b04048_Kenney Mini Square.ttf",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "file": "assets/8BitOperatorPlus8Regular_Edited.fnt",
+        "kind": "bitmapFont",
+        "metadata": "",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/8BitOperatorPlus8Regular_Edited.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/8BitOperatorPlus8Regular_Edited.png\",\"extension\":\".png\",\"pskl\":{}}",
+        "name": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Untitled.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Untitled",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Play_press.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Play_press.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sword.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sword.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Sword_cursor.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Sword_cursor.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Play2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Play",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Left2LiveTitle.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Left2LiveTitle.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Credits.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Credits.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Credits_press.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Credits_press.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wood Block 2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Wood Block 2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Western FPS 2D/Hud/214244613116a7a14a16fecabfcdaed3e27429ea931484faa394c52427df384e_Wood Block 2.png",
+          "name": "Wood Block 2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Wood Block3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Wood Block3.png\"}",
+        "name": "Wood Block 2",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "file": "assets/1up 1.aac",
+        "kind": "audio",
+        "metadata": "",
+        "name": "19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Arcade/Sound effects/1up/19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+          "name": "gdevelop-asset-store"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Exit.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Exit.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Exit_press.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "assets\\Exit_press.png",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite48.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite48",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/BossDoor.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "BossDoor",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4181,37 +4380,52 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "CatacombTileMap"
+        "folderName": "UI_global",
+        "children": [
+          {
+            "objectName": "Armor_Bar"
+          },
+          {
+            "objectName": "HealthBar"
+          }
+        ]
       },
       {
-        "objectName": "Frontground_TileMap"
+        "folderName": "Entity",
+        "children": [
+          {
+            "objectName": "Boss"
+          },
+          {
+            "objectName": "Projectile3"
+          },
+          {
+            "objectName": "IronChestplate"
+          },
+          {
+            "objectName": "RedPotion"
+          },
+          {
+            "objectName": "Monster"
+          },
+          {
+            "objectName": "DinoShadow"
+          },
+          {
+            "objectName": "DinoMort"
+          }
+        ]
       },
       {
-        "objectName": "DinoMort"
-      },
-      {
-        "objectName": "DinoShadow"
-      },
-      {
-        "objectName": "IronChestplate"
-      },
-      {
-        "objectName": "RedPotion"
-      },
-      {
-        "objectName": "Monster"
-      },
-      {
-        "objectName": "Projectile3"
-      },
-      {
-        "objectName": "HealthBar"
-      },
-      {
-        "objectName": "Armor_Bar"
-      },
-      {
-        "objectName": "Boss"
+        "folderName": "Tilemap",
+        "children": [
+          {
+            "objectName": "Frontground_TileMap"
+          },
+          {
+            "objectName": "CatacombTileMap"
+          }
+        ]
       }
     ]
   },
@@ -4248,10 +4462,26 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/boss-fight"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/start-screen"
     }
   ],
   "externalEvents": [],
   "eventsFunctionsExtensions": [
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/shakeobject"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/mousehelper"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/cursortype"
+    },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/sway"

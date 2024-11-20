@@ -1,0 +1,1221 @@
+{
+  "b": 209,
+  "disableInputWhenNotFocused": true,
+  "mangledName": "Start_32Screen",
+  "name": "Start Screen",
+  "r": 209,
+  "standardSortMethod": true,
+  "stopSoundsOnStartup": true,
+  "title": "",
+  "v": 209,
+  "uiSettings": {
+    "grid": false,
+    "gridType": "rectangular",
+    "gridWidth": 32,
+    "gridHeight": 32,
+    "gridOffsetX": 0,
+    "gridOffsetY": 0,
+    "gridColor": 10401023,
+    "gridAlpha": 0.5,
+    "snap": false,
+    "zoomFactor": 0.6937238887523814,
+    "windowMask": false
+  },
+  "objectsGroups": [],
+  "variables": [],
+  "instances": [
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 90,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Play_button",
+      "persistentUuid": "00813e36-32a5-4438-ab5f-4606fa570ecd",
+      "width": 196,
+      "x": 302,
+      "y": 308,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2.8125,
+      "height": 45,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Cursor",
+      "persistentUuid": "c61c3670-f1a0-42a8-927b-b26f5dce3076",
+      "width": 45,
+      "x": 672,
+      "y": 512,
+      "zOrder": 8,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 260,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Left2LiveTitle",
+      "persistentUuid": "adedf944-aecb-46c1-a280-1bdd35ec062d",
+      "width": 364,
+      "x": 218,
+      "y": 32,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 5,
+      "height": 92,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Credits_button",
+      "persistentUuid": "bdfdb5a5-940e-4a8b-b5e8-f8cd6cd7b25b",
+      "width": 235,
+      "x": 281,
+      "y": 399,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Text",
+      "name": "NewBitmapText",
+      "persistentUuid": "83157f07-2784-411c-8ba2-154a652bb80a",
+      "width": 0,
+      "x": 32,
+      "y": 32,
+      "zOrder": 5,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 784,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "CatacombTileMap",
+      "persistentUuid": "bf5efec0-92af-4dc3-8ed4-20ee3977dd8b",
+      "width": 800,
+      "x": 0,
+      "y": -96,
+      "zOrder": 6,
+      "numberProperties": [],
+      "stringProperties": [
+        {
+          "name": "tilemap",
+          "value": "{\"tileWidth\":16,\"tileHeight\":16,\"dimX\":50,\"dimY\":37,\"layers\":[{\"id\":0,\"alpha\":1,\"tiles\":[[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1134,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1134,1518,1518,1518,1518,1518,1134,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1583,1518,1518,1518,1518,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1134,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1583,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1583,1518,1518,1518,1518,1518,1134,1134,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1391,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518],[1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518,1518]]}]}"
+        }
+      ],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4.693877551020408,
+      "height": 92,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Exit_button",
+      "persistentUuid": "bc4632b5-bb6f-4b08-9138-46630600743b",
+      "width": 199.95918367346937,
+      "x": 300,
+      "y": 496,
+      "zOrder": 7,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    }
+  ],
+  "objects": [
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Play_button",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Play",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Play",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Play press",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Play_press.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Cursor",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "SmoothCamera",
+          "type": "SmoothCamera::SmoothCamera",
+          "LeftwardSpeed": 0.2,
+          "RightwardSpeed": 0.2,
+          "UpwardSpeed": 0.2,
+          "DownwardSpeed": 0.2,
+          "FollowOnX": true,
+          "FollowOnY": true,
+          "FollowFreeAreaLeft": 0,
+          "FollowFreeAreaRight": 0,
+          "FollowFreeAreaTop": 0,
+          "FollowFreeAreaBottom": 0,
+          "CameraOffsetX": 0,
+          "CameraOffsetY": 0,
+          "CameraDelay": 0,
+          "ForecastTime": 0,
+          "ForecastHistoryDuration": 0,
+          "LogLeftwardSpeed": 2.0247e-320,
+          "LogRightwardSpeed": 2.0247e-320,
+          "LogDownwardSpeed": 2.0247e-320,
+          "LogUpwardSpeed": 2.0247e-320,
+          "DelayedCenterX": 2.0247e-320,
+          "DelayedCenterY": 2.0247e-320,
+          "ForecastHistoryMeanX": 2.0247e-320,
+          "ForecastHistoryMeanY": 2.0247e-320,
+          "ForecastHistoryVarianceX": 2.0247e-320,
+          "ForecastHistoryCovariance": 2.0247e-320,
+          "ForecastHistoryLinearA": 2.0247e-320,
+          "ForecastHistoryLinearB": 2.0247e-320,
+          "ForecastedX": 2.0247e-320,
+          "ForecastedY": 2.0247e-320,
+          "ProjectedNewestX": 2.0247e-320,
+          "ProjectedNewestY": 2.0247e-320,
+          "ProjectedOldestX": 2.0247e-320,
+          "ProjectedOldestY": 2.0247e-320,
+          "ForecastHistoryVarianceY": 2.0247e-320,
+          "Index": 2.0247e-320,
+          "CameraDelayCatchUpSpeed": 0,
+          "CameraExtraDelay": 2.0247e-320,
+          "WaitingSpeedXMax": 2.0247e-320,
+          "WaitingSpeedYMax": 2.0247e-320,
+          "WaitingEnd": 2.0247e-320,
+          "CameraDelayCatchUpDuration": 2.0247e-320,
+          "LeftwardSpeedMax": 9000,
+          "RightwardSpeedMax": 9000,
+          "UpwardSpeedMax": 9000,
+          "DownwardSpeedMax": 9000,
+          "OldX": 9000.000000007454,
+          "OldY": 9000.000000007454,
+          "IsCalledManually": false
+        },
+        {
+          "name": "cursor",
+          "type": "MouseHelper::cursor"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Sword_cursor.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Left2LiveTitle",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Left2LiveTitle.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 91,
+                        "y": 0
+                      },
+                      {
+                        "x": 91,
+                        "y": 65
+                      },
+                      {
+                        "x": 0,
+                        "y": 65
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Credits_button",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Credits",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Credits.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 47,
+                        "y": 0
+                      },
+                      {
+                        "x": 47,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Credits_press",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Credits_press.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 47,
+                        "y": 0
+                      },
+                      {
+                        "x": 47,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Credits_Bitmap",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "lorem ipsum",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "bottomMargin": 0,
+      "height": 32,
+      "leftMargin": 0,
+      "name": "NewPanelSprite",
+      "rightMargin": 0,
+      "texture": "",
+      "tiled": true,
+      "topMargin": 0,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 32,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Exit_button",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Exit",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Exit.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Exit_press",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Exit_press.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 0
+                      },
+                      {
+                        "x": 39,
+                        "y": 18
+                      },
+                      {
+                        "x": 0,
+                        "y": 18
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "objectsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "objectName": "Play_button"
+      },
+      {
+        "objectName": "Left2LiveTitle"
+      },
+      {
+        "objectName": "NewPanelSprite"
+      },
+      {
+        "objectName": "Cursor"
+      },
+      {
+        "objectName": "Credits_button"
+      },
+      {
+        "objectName": "Exit_button"
+      },
+      {
+        "objectName": "Credits_Bitmap"
+      }
+    ]
+  },
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Credits_Bitmap"
+          ]
+        },
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "5",
+            "\"Background\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "8bit Dungeon Level.mp3",
+            "yes",
+            "100",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CacheSouris"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Play_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Play_button",
+            "Animation",
+            "=",
+            "\"Play press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+            "",
+            "50",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level1\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Credits_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Credits_button",
+            "Animation",
+            "=",
+            "\"Credits_press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "19718bbacb87bd7a1367a4a55a453f197dee53bffd2f14a2cc0969ccbc16c777_1up 1.aac",
+            "",
+            "50",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "2"
+          ]
+        },
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Credits_button",
+            "Animation",
+            "=",
+            "\"Credits\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Exit_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Exit_button",
+            "Animation",
+            "=",
+            "\"Exit_press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Quit"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    }
+  ],
+  "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [
+        {
+          "defaultSize": true,
+          "defaultViewport": true,
+          "height": 0,
+          "viewportBottom": 1,
+          "viewportLeft": 0,
+          "viewportRight": 1,
+          "viewportTop": 0,
+          "width": 0
+        }
+      ],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Text",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Main",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    }
+  ],
+  "behaviorsSharedData": [
+    {
+      "name": "Animation",
+      "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "Effect",
+      "type": "EffectCapability::EffectBehavior"
+    },
+    {
+      "name": "FireBullet",
+      "type": "FireBullet::FireBullet"
+    },
+    {
+      "name": "Flippable",
+      "type": "FlippableCapability::FlippableBehavior"
+    },
+    {
+      "name": "Opacity",
+      "type": "OpacityCapability::OpacityBehavior"
+    },
+    {
+      "name": "Pathfinding",
+      "type": "PathfindingBehavior::PathfindingBehavior"
+    },
+    {
+      "name": "Platform",
+      "type": "PlatformBehavior::PlatformBehavior"
+    },
+    {
+      "name": "Resizable",
+      "type": "ResizableCapability::ResizableBehavior"
+    },
+    {
+      "name": "Scale",
+      "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "SmoothCamera",
+      "type": "SmoothCamera::SmoothCamera"
+    },
+    {
+      "name": "StayOnScreen",
+      "type": "StayOnScreen::StayOnScreen"
+    },
+    {
+      "name": "Text",
+      "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TimedBackAndForthMirroredMovement",
+      "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement"
+    },
+    {
+      "name": "TopDownMovement",
+      "type": "TopDownMovementBehavior::TopDownMovementBehavior"
+    },
+    {
+      "name": "Tween",
+      "type": "Tween::TweenBehavior"
+    },
+    {
+      "name": "YSort",
+      "type": "YSort::YSort"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
+    }
+  ]
+}

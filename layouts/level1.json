@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.9394627155478261,
+    "zoomFactor": 0.7412978919222515,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -62,8 +62,8 @@
       "name": "Monster",
       "persistentUuid": "556efc49-0c66-418c-9587-5ff1a87acb21",
       "width": 18,
-      "x": 352,
-      "y": 415,
+      "x": 144,
+      "y": 432,
       "zOrder": 1006,
       "numberProperties": [],
       "stringProperties": [],
@@ -110,8 +110,8 @@
       "name": "IronChestplate",
       "persistentUuid": "0664dd3b-f98b-4c18-b290-ea9216da0a14",
       "width": 0,
-      "x": 384,
-      "y": 320,
+      "x": 128,
+      "y": 400,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -127,8 +127,8 @@
       "name": "IronChestplate",
       "persistentUuid": "f3ad407c-0153-4be1-b385-6f9546f1f071",
       "width": 16,
-      "x": 384,
-      "y": 352,
+      "x": 304,
+      "y": 432,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -143,8 +143,8 @@
       "name": "IronChestplate",
       "persistentUuid": "e0ccbfa2-e2ed-4974-85b2-89fd3c3a2754",
       "width": 0,
-      "x": 400,
-      "y": 320,
+      "x": 128,
+      "y": 368,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -159,8 +159,8 @@
       "name": "IronChestplate",
       "persistentUuid": "479ac4dd-f2ba-4c3d-816b-690ca16889a4",
       "width": 0,
-      "x": 400,
-      "y": 336,
+      "x": 160,
+      "y": 368,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -175,8 +175,8 @@
       "name": "IronChestplate",
       "persistentUuid": "6eabf995-d08a-4446-946a-f9506f0f0073",
       "width": 0,
-      "x": 400,
-      "y": 352,
+      "x": 272,
+      "y": 432,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -191,8 +191,8 @@
       "name": "IronChestplate",
       "persistentUuid": "59847e29-4b3b-4823-8035-487c1793e965",
       "width": 0,
-      "x": 384,
-      "y": 336,
+      "x": 160,
+      "y": 400,
       "zOrder": 1005,
       "numberProperties": [],
       "stringProperties": [],
@@ -244,8 +244,8 @@
       "name": "RedPotion",
       "persistentUuid": "0a87e8a6-60a1-42da-a967-a85b02f5b218",
       "width": 0,
-      "x": 432,
-      "y": 432,
+      "x": 144,
+      "y": 384,
       "zOrder": 1006,
       "numberProperties": [],
       "stringProperties": [],
@@ -361,82 +361,53 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 66,
+      "height": 80,
       "keepRatio": true,
       "layer": "Main",
       "name": "Tutorial",
-      "persistentUuid": "2eaaee65-b91d-4436-9582-620ae0c050c2",
-      "width": 80,
-      "x": 304,
+      "persistentUuid": "9bfa0655-7462-45d9-a37d-2897a1254880",
+      "width": 96,
+      "x": 288,
+      "y": 320,
+      "zOrder": 1012,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "BossFightDoor",
+      "persistentUuid": "41937336-975d-4b5a-8d83-56fa0f204d65",
+      "width": 0,
+      "x": 112,
+      "y": 272,
+      "zOrder": 1014,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "E",
+      "persistentUuid": "913ff4d3-5a98-4dfc-9673-fe77515bbb87",
+      "width": 0,
+      "x": 138,
       "y": 304,
-      "zOrder": 1011,
+      "zOrder": 1015,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
     }
   ],
   "objects": [
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
-      "name": "Armor_Item",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Armor_Item",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "NewSprite3",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 18,
-                        "y": 28
-                      },
-                      {
-                        "x": 40,
-                        "y": 28
-                      },
-                      {
-                        "x": 40,
-                        "y": 46
-                      },
-                      {
-                        "x": 18,
-                        "y": 46
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "2d231a9ce9955894fcb53e453f81958dbe35aeeabbcd0dc506b67b2de21fc567",
@@ -1410,21 +1381,6 @@
     },
     {
       "assetStoreId": "",
-      "name": "RuinsTileMap",
-      "type": "TileMap::SimpleTileMap",
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "content": {
-        "atlasImage": "TX Tileset Grass.png",
-        "rowCount": 16,
-        "columnCount": 16,
-        "tileSize": 16,
-        "tilesWithHitBox": ""
-      }
-    },
-    {
-      "assetStoreId": "",
       "height": 16,
       "name": "playerSpawn",
       "texture": "",
@@ -1530,44 +1486,87 @@
     },
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
       "name": "Tutorial",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "type": "BitmapText::BitmapTextObject",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "Hold Shift to sprint\nSpace to shoot projectiles\nPick up armor to patch yourself\n",
-      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-      "textAlignment": "left",
-      "characterSize": 7,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 0
-      },
       "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Hold Shift to sprint\nSpace to shoot projectiles\nPick up armor to patch yourself\n",
-        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 7,
-        "color": "0;0;0"
+        "text": "Hold Shift to sprint\nSpace to shoot projectiles\nPick up armor to patch yourself",
+        "opacity": 255,
+        "scale": 0.5,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BossFightDoor",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BossDoor",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "BossDoor",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "E",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ShakeObject_PositionAngle",
+          "type": "ShakeObject::ShakeObject_PositionAngle"
+        }
+      ],
+      "content": {
+        "text": "E",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
       }
     }
   ],
@@ -1575,70 +1574,80 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Armor_Item"
+        "folderName": "UI",
+        "children": [
+          {
+            "objectName": "BossFightDoor"
+          },
+          {
+            "objectName": "playerSpawn"
+          },
+          {
+            "objectName": "E"
+          },
+          {
+            "objectName": "Tutorial"
+          },
+          {
+            "objectName": "Health_text"
+          },
+          {
+            "objectName": "Damage_text"
+          }
+        ]
       },
       {
-        "objectName": "IronLeggings"
-      },
-      {
-        "objectName": "IronBoots"
-      },
-      {
-        "objectName": "IronGauntlets"
-      },
-      {
-        "objectName": "IronHelmet"
-      },
-      {
-        "objectName": "LeatherHelmet"
-      },
-      {
-        "objectName": "LeatherChestplate"
-      },
-      {
-        "objectName": "LeatherBoots"
-      },
-      {
-        "objectName": "LeatherGauntlets"
-      },
-      {
-        "objectName": "LeatherLeggings"
-      },
-      {
-        "objectName": "BluePotion"
-      },
-      {
-        "objectName": "HessoniteGemstone"
-      },
-      {
-        "objectName": "SapphireGem"
-      },
-      {
-        "objectName": "Ruby"
-      },
-      {
-        "objectName": "Apple"
-      },
-      {
-        "objectName": "Anvil"
-      },
-      {
-        "objectName": "Boomerang"
-      },
-      {
-        "objectName": "RuinsTileMap"
-      },
-      {
-        "objectName": "playerSpawn"
-      },
-      {
-        "objectName": "Damage_text"
-      },
-      {
-        "objectName": "Health_text"
-      },
-      {
-        "objectName": "Tutorial"
+        "folderName": "Items",
+        "children": [
+          {
+            "objectName": "Boomerang"
+          },
+          {
+            "objectName": "Anvil"
+          },
+          {
+            "objectName": "Apple"
+          },
+          {
+            "objectName": "Ruby"
+          },
+          {
+            "objectName": "SapphireGem"
+          },
+          {
+            "objectName": "HessoniteGemstone"
+          },
+          {
+            "objectName": "BluePotion"
+          },
+          {
+            "objectName": "LeatherLeggings"
+          },
+          {
+            "objectName": "LeatherGauntlets"
+          },
+          {
+            "objectName": "LeatherBoots"
+          },
+          {
+            "objectName": "LeatherChestplate"
+          },
+          {
+            "objectName": "LeatherHelmet"
+          },
+          {
+            "objectName": "IronHelmet"
+          },
+          {
+            "objectName": "IronGauntlets"
+          },
+          {
+            "objectName": "IronBoots"
+          },
+          {
+            "objectName": "IronLeggings"
+          }
+        ]
       }
     ]
   },
@@ -1679,6 +1688,22 @@
             "100",
             "1"
           ]
+        },
+        {
+          "type": {
+            "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+          },
+          "parameters": [
+            "E",
+            "ShakeObject_PositionAngle",
+            ".5",
+            "0",
+            "1",
+            "10",
+            "1",
+            "yes",
+            ""
+          ]
         }
       ]
     },
@@ -1709,49 +1734,63 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Camera",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "\"Main\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "3",
-            "\"Walls\"",
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "3",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"Main\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "3",
+                "\"Walls\"",
+                ""
+              ]
+            }
           ]
         }
-      ]
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1875,6 +1914,43 @@
                 "Animation",
                 "=",
                 "\"Idle\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "LShift"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "TopDownMovementBehavior::IsMoving"
+              },
+              "parameters": [
+                "DinoMort",
+                "TopDownMovement"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "DinoMort",
+                "Animation",
+                "=",
+                "\"Crouch\""
               ]
             }
           ]
@@ -2054,44 +2130,45 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "DinoMort",
+                "CatacombTileMap",
+                "",
+                "",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SeparateFromObjects"
+              },
+              "parameters": [
+                "DinoMort",
+                "CatacombTileMap",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "DinoMort",
-            "CatacombTileMap",
-            "",
-            "",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SeparateFromObjects"
-          },
-          "parameters": [
-            "DinoMort",
-            "CatacombTileMap",
-            ""
-          ]
-        }
-      ]
     },
     {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Projectile Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2565,6 +2642,70 @@
       "parameters": []
     },
     {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "name": "Boss Door",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "DinoMort",
+                "BossFightDoor",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "E"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Boss Fight\"",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
       "type": "BuiltinCommonInstructions::Comment",
       "color": {
         "b": 109,
@@ -2577,6 +2718,7 @@
       "comment": "Player Takes Damage (Collision Test)"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -2958,6 +3100,7 @@
       ]
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -3309,6 +3452,10 @@
     {
       "name": "Scale",
       "type": "ScalableCapability::ScalableBehavior"
+    },
+    {
+      "name": "ShakeObject_PositionAngle",
+      "type": "ShakeObject::ShakeObject_PositionAngle"
     },
     {
       "name": "SmoothCamera",
