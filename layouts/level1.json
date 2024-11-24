@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.77648995073816,
+    "zoomFactor": 1.4084497336635424,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -27,6 +27,16 @@
       "name": "Player_Movement",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "Variable",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "hasKey",
+      "type": "boolean",
+      "value": false
     }
   ],
   "instances": [
@@ -283,7 +293,7 @@
       "width": 0,
       "x": 320,
       "y": 176,
-      "zOrder": 1003,
+      "zOrder": 1020,
       "numberProperties": [],
       "stringProperties": [
         {
@@ -363,28 +373,12 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Main",
-      "name": "BossFightDoor",
+      "name": "GateDoor",
       "persistentUuid": "41937336-975d-4b5a-8d83-56fa0f204d65",
       "width": 0,
-      "x": 112,
-      "y": 272,
+      "x": 362,
+      "y": 330,
       "zOrder": 1014,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": false,
-      "height": 0,
-      "keepRatio": true,
-      "layer": "Main",
-      "name": "E",
-      "persistentUuid": "913ff4d3-5a98-4dfc-9673-fe77515bbb87",
-      "width": 0,
-      "x": 138,
-      "y": 304,
-      "zOrder": 1015,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -422,6 +416,38 @@
       "x": 432,
       "y": 432,
       "zOrder": 1017,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "E_key",
+      "persistentUuid": "29db6520-ebb7-4264-9e64-e98ad23448e0",
+      "width": 0,
+      "x": 435,
+      "y": 418,
+      "zOrder": 1018,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "E_gate",
+      "persistentUuid": "f4e8b13f-a2d9-4563-a2ef-a0776f9e0d04",
+      "width": 0,
+      "x": 387,
+      "y": 342,
+      "zOrder": 1019,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1413,7 +1439,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "BossFightDoor",
+      "name": "GateDoor",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -1463,7 +1489,7 @@
       "behaviors": [],
       "animations": [
         {
-          "name": "",
+          "name": "Idle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -1520,7 +1546,7 @@
         "folderName": "UI",
         "children": [
           {
-            "objectName": "BossFightDoor"
+            "objectName": "GateDoor"
           },
           {
             "objectName": "playerSpawn"
@@ -1628,7 +1654,7 @@
             "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
           },
           "parameters": [
-            "E",
+            "E_key",
             "ShakeObject_PositionAngle",
             ".5",
             "0",
@@ -1637,6 +1663,24 @@
             "1",
             "yes",
             ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "hasKey",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "E_gate"
           ]
         }
       ]
@@ -1672,6 +1716,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Camera",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1723,6 +1768,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2607,10 +2653,212 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Boss Door",
+      "name": "Key and Gate Interactions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Key"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Distance"
+              },
+              "parameters": [
+                "DinoMort",
+                "GoldKey",
+                "20",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "E_key"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "hasKey",
+                "True",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "hasKey",
+                "True",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "GoldKey",
+                "=",
+                "DinoMort.X()-5",
+                "=",
+                "DinoMort.Y()+3"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::Once"
+                  },
+                  "parameters": []
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "PlaySound"
+                  },
+                  "parameters": [
+                    "",
+                    "assets\\1up 1.aac",
+                    "",
+                    "30",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Key_acquired",
+                    "DinoMort.X()",
+                    "DinoMort.Y()-30",
+                    "\"Main\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Key_acquired",
+                    "Tween",
+                    "\"Lift\"",
+                    "Key_acquired.Y()-30",
+                    "\"linear\"",
+                    ".8",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Key_acquired",
+                    "Tween",
+                    "\"Fade\"",
+                    "0",
+                    "\"linear\"",
+                    "1",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Montre"
+                  },
+                  "parameters": [
+                    "E_gate",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+                  },
+                  "parameters": [
+                    "E_gate",
+                    "ShakeObject_PositionAngle",
+                    ".5",
+                    "0",
+                    "1",
+                    "10",
+                    "1",
+                    "yes",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Gate"
+        },
         {
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
@@ -2620,7 +2868,7 @@
               },
               "parameters": [
                 "DinoMort",
-                "BossFightDoor",
+                "GateDoor",
                 "",
                 "",
                 ""
@@ -2648,16 +2896,27 @@
                 "value": "Cache"
               },
               "parameters": [
-                "E"
+                "E_gate"
               ]
             },
             {
               "type": {
-                "value": "Scene"
+                "value": "Delete"
+              },
+              "parameters": [
+                "GateTileMap",
+                "368"
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
               },
               "parameters": [
                 "",
-                "\"Boss Fight\"",
+                "pixel-coin-collect-197952.mp3",
+                "",
+                "100",
                 ""
               ]
             }
@@ -2833,7 +3092,7 @@
                 "0",
                 "\"linear\"",
                 "1",
-                ""
+                "yes"
               ]
             }
           ]
@@ -3169,7 +3428,7 @@
                 "0",
                 "\"linear\"",
                 "1",
-                ""
+                "yes"
               ]
             }
           ]
@@ -3429,6 +3688,10 @@
     {
       "name": "Text",
       "type": "TextContainerCapability::TextContainerBehavior"
+    },
+    {
+      "name": "TimedBackAndForthMirroredMovement",
+      "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement"
     },
     {
       "name": "TopDownMovement",
