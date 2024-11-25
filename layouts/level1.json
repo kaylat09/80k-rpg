@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 1.4084497336635424,
+    "zoomFactor": 0.5946505908924099,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -35,6 +35,11 @@
     },
     {
       "name": "hasKey",
+      "type": "boolean",
+      "value": false
+    },
+    {
+      "name": "hasArmor",
       "type": "boolean",
       "value": false
     }
@@ -448,6 +453,56 @@
       "x": 387,
       "y": 342,
       "zOrder": 1019,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "BossDoor",
+      "persistentUuid": "b4eb5cd9-490d-432e-aaff-d72c2c4a1c37",
+      "width": 48,
+      "x": 368,
+      "y": 64,
+      "zOrder": 1021,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "E_boss",
+      "persistentUuid": "38fa54fe-e354-4299-a0c2-4049818c1af7",
+      "width": 0,
+      "x": 387,
+      "y": 96,
+      "zOrder": 1022,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 80,
+      "keepRatio": true,
+      "layer": "Main",
+      "name": "Tutorial",
+      "persistentUuid": "5450b836-b046-465e-9c39-47ef70c96b1c",
+      "width": 96,
+      "x": 416,
+      "y": 320,
+      "zOrder": 1023,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1537,6 +1592,48 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BossDoor",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "BossDoor",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": false,
+                  "image": "BossDoor",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": []
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1547,6 +1644,9 @@
         "children": [
           {
             "objectName": "GateDoor"
+          },
+          {
+            "objectName": "BossDoor"
           },
           {
             "objectName": "playerSpawn"
@@ -2653,7 +2753,8 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "name": "Key and Gate Interactions",
+      "folded": true,
+      "name": "Key, Gate, and Boss Door Interactions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -2721,6 +2822,7 @@
           ]
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -2876,6 +2978,16 @@
             },
             {
               "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "hasKey",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "KeyPressed"
               },
               "parameters": [
@@ -2910,6 +3022,15 @@
             },
             {
               "type": {
+                "value": "Delete"
+              },
+              "parameters": [
+                "GoldKey",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "PlaySound"
               },
               "parameters": [
@@ -2917,6 +3038,70 @@
                 "pixel-coin-collect-197952.mp3",
                 "",
                 "100",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Boss Door\n"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "DinoMort",
+                "BossDoor",
+                "",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "e"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Cache"
+              },
+              "parameters": [
+                "E_boss"
+              ]
+            },
+            {
+              "type": {
+                "value": "Scene"
+              },
+              "parameters": [
+                "",
+                "\"Boss Fight\"",
                 ""
               ]
             }
@@ -3314,6 +3499,16 @@
           },
           "parameters": [
             "IronChestplate",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "hasArmor",
+            "True",
             ""
           ]
         }
