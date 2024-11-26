@@ -2625,6 +2625,33 @@
         "preloadAsSound": false,
         "preloadInCache": false,
         "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/playerSpawn.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"pskl\":{}}",
+        "name": "playerSpawn",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Tablet_tutorial.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Tablet_tutorial.png\"}",
+        "name": "Tablet_tutorial",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite49.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/NewSprite49.png\"}",
+        "name": "NewSprite49",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -4611,9 +4638,9 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "Hold Shift to sprint\nSpace to shoot projectiles\nPick up armor to patch yourself",
+        "text": "Hold Shift to sprint, wasd to move.\nSpace to shoot projectiles\nPick up armor to patch yourself up! \nESC to exit",
         "opacity": 255,
-        "scale": 0.5,
+        "scale": 1.7,
         "fontSize": 20,
         "tint": "255;255;255",
         "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
@@ -4724,6 +4751,72 @@
         "align": "left",
         "wordWrap": true
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "Cursor",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "isFolded": true,
+          "name": "cursor",
+          "type": "MouseHelper::cursor"
+        }
+      ],
+      "animations": [
+        {
+          "name": "",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "assets\\Sword_cursor.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 16
+                      },
+                      {
+                        "x": 0,
+                        "y": 16
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4732,6 +4825,9 @@
       {
         "folderName": "UI_global",
         "children": [
+          {
+            "objectName": "Cursor"
+          },
           {
             "objectName": "Tutorial"
           },
@@ -4814,6 +4910,11 @@
       "name": "LastDirection",
       "type": "string",
       "value": ""
+    },
+    {
+      "name": "showOptions",
+      "type": "boolean",
+      "value": false
     }
   ],
   "layouts": [

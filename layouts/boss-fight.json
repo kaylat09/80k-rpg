@@ -4048,6 +4048,10 @@
       "type": "TextContainerCapability::TextContainerBehavior"
     },
     {
+      "name": "TimedBackAndForthMirroredMovement",
+      "type": "TimedBackAndForthMovement::TimedBackAndForthMirroredMovement"
+    },
+    {
       "name": "TopDownMovement",
       "type": "TopDownMovementBehavior::TopDownMovementBehavior"
     },
