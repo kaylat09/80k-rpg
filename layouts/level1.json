@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.6790067398286076,
+    "zoomFactor": 1.0449940886695113,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1908,6 +1908,22 @@
               "parameters": [
                 "E_gate"
               ]
+            },
+            {
+              "type": {
+                "value": "ShakeObject::ShakeObject_PositionAngle::ShakeObject_PositionAngle"
+              },
+              "parameters": [
+                "E_boss",
+                "ShakeObject_PositionAngle",
+                ".5",
+                "0",
+                "1",
+                "10",
+                "1",
+                "yes",
+                ""
+              ]
             }
           ]
         },
@@ -2915,7 +2931,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Key, Gate, and Boss Door Interactions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -3968,7 +3983,7 @@
       "isLocked": false,
       "name": "Options_tutorial",
       "renderingType": "",
-      "visibility": false,
+      "visibility": true,
       "cameras": [],
       "effects": [
         {
