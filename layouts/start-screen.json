@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.5,
     "snap": true,
-    "zoomFactor": 0.49666231310894154,
+    "zoomFactor": 0.5671180070867078,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -79,7 +79,7 @@
       "height": 0,
       "keepRatio": true,
       "layer": "Text",
-      "name": "NewBitmapText",
+      "name": "Health_vis",
       "persistentUuid": "83157f07-2784-411c-8ba2-154a652bb80a",
       "width": 0,
       "x": 32,

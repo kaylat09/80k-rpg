@@ -2652,6 +2652,271 @@
         "name": "NewSprite49",
         "smoothed": false,
         "userAdded": false
+      },
+      {
+        "file": "assets/pixel-coin-collect-197952.mp3",
+        "kind": "audio",
+        "metadata": "",
+        "name": "assets\\pixel-coin-collect-197952.mp3",
+        "preloadAsMusic": false,
+        "preloadAsSound": false,
+        "preloadInCache": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fireball_Projectile_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Fireball_Projectile_1.png\",\"extension\":\".png\"}",
+        "name": "Fireball_Projectile_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 8/Projectile/a6e2b639a16c477726113bec0c2a136a11c17a8aaa9d93d5758670da579c7fe7_Fireball_Projectile_1.png",
+          "name": "Fireball_Projectile_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fireball_Projectile_2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Fireball_Projectile_2.png\",\"extension\":\".png\"}",
+        "name": "Fireball_Projectile_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 8/Projectile/6a18f41e1cb77216730f1696bb2f16c97c1af75778d3c4b9b8619be807a2abab_Fireball_Projectile_2.png",
+          "name": "Fireball_Projectile_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Fireball_Projectile_3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Fireball_Projectile_3.png\",\"extension\":\".png\"}",
+        "name": "Fireball_Projectile_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 8/Projectile/0f85e5a801c2ac82a6bea43213a70fe44164188166f87dee8d3f923b8d5fd9a4_Fireball_Projectile_3.png",
+          "name": "Fireball_Projectile_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Magic Charged Pellet_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Magic Charged Pellet_1.png\",\"extension\":\".png\"}",
+        "name": "Magic Charged Pellet_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Projectile/64fbcab15a3a869a888fb4436f24690be261242a0dadc7c4fafeeb8c7cea7282_Magic Charged Pellet_1.png",
+          "name": "Magic Charged Pellet_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Magic Charged Pellet_2.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Magic Charged Pellet_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/GrafxKid Pack/Character Pack 6/Projectile/86674e89ec47747974d3b5fed9da64e7b0c914ff07d7daeeb001fd798bac0be9_Magic Charged Pellet_2.png",
+          "name": "Magic Charged Pellet_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_1.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_1.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_1.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/8f20367f048539c57e0c9379ffa0e37b1e8db34f00ee89f928e489731319ca1e_Necromancer_Idle_1.png",
+          "name": "Necromancer_Idle_1.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_2.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_2.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_2.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/205778550a13fbae5f8986d6db3a58b9446ce5dfebf3517bec378063dcd533e2_Necromancer_Idle_2.png",
+          "name": "Necromancer_Idle_2.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_3.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_3.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_3.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/e5d9cb3ed0fbb0d8a1d04c7da9fdea879143a4db5f1e27e56bb90d02e370d5c5_Necromancer_Idle_3.png",
+          "name": "Necromancer_Idle_3.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_4.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_4.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_4.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/d5bac6b2100fc60cbaef3124141860a6a256ccd6ad7c0b4e20daa44bc4164215_Necromancer_Idle_4.png",
+          "name": "Necromancer_Idle_4.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_5.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_5.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_5.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/6e553aa87f77639df7cdfba4298148c13cbef4ce30f67cd10479a21470e4d2c6_Necromancer_Idle_5.png",
+          "name": "Necromancer_Idle_5.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Necromancer_Idle_6.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"assets/Necromancer_Idle_6.png\",\"extension\":\".png\"}",
+        "name": "Necromancer_Idle_6.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/Pixel Platformer Pack/Enemies/a7e447bf3a3f21502b369384227dfe2ea3aa5ac9527c15a9507b01b3293bafa6_Necromancer_Idle_6.png",
+          "name": "Necromancer_Idle_6.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Magic Charged Pellet_3.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Magic Charged Pellet_1",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Barbarian Helm.png",
+        "kind": "image",
+        "metadata": "",
+        "name": "Barbarian Helm.png",
+        "smoothed": false,
+        "userAdded": false,
+        "origin": {
+          "identifier": "https://asset-resources.gdevelop.io/public-resources/16x16 RPG Item Pack/Armors/85affdaeeac5c10ea9ab77b04c5fc57ea9650e4d138258a1df156cd200b8e5b6_Barbarian Helm.png",
+          "name": "Barbarian Helm.png"
+        }
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Barbarian Helm2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/Barbarian Helm2.png\"}",
+        "name": "Barbarian Helm",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite50.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite50",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite51.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite51",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite52.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite52",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite53.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite53",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite54.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite54",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/NewSprite55.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "NewSprite55",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Invincible5.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Invincible5",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Invincible6.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Invincible6",
+        "smoothed": false,
+        "userAdded": false
+      },
+      {
+        "alwaysLoaded": false,
+        "file": "assets/Invincible7.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Invincible7",
+        "smoothed": false,
+        "userAdded": false
       }
     ],
     "resourceFolders": []
@@ -3983,7 +4248,7 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "f5035ede934d2c710cde2b8228e57b891a5e5d0e51e737b9db1211542e4826e4",
-      "name": "Projectile3",
+      "name": "Projectile3_",
       "type": "Sprite",
       "updateIfNotVisible": false,
       "variables": [],
@@ -4312,7 +4577,7 @@
       ],
       "animations": [
         {
-          "name": "NewSprite",
+          "name": "BossIdle",
           "useMultipleDirections": false,
           "directions": [
             {
@@ -4322,7 +4587,7 @@
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "NewSprite4",
+                  "image": "NewSprite50",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4338,20 +4603,200 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 7,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 26,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 26,
+                        "y": 27
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 7,
+                        "y": 27
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite51",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 27
+                      },
+                      {
+                        "x": 7,
+                        "y": 27
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite52",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 27
+                      },
+                      {
+                        "x": 7,
+                        "y": 27
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite53",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 27
+                      },
+                      {
+                        "x": 7,
+                        "y": 27
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite54",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 27
+                      },
+                      {
+                        "x": 7,
+                        "y": 27
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite55",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 7,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 7
+                      },
+                      {
+                        "x": 26,
+                        "y": 27
+                      },
+                      {
+                        "x": 7,
+                        "y": 27
                       }
                     ]
                   ]
@@ -4366,12 +4811,12 @@
           "directions": [
             {
               "looping": true,
-              "metadata": "{\"pskl\":{}}",
+              "metadata": "{\"pskl\":{\"data\":\"{\\\"modelVersion\\\":2,\\\"piskel\\\":{\\\"name\\\":\\\"Invincible\\\",\\\"description\\\":\\\"\\\",\\\"fps\\\":12,\\\"height\\\":32,\\\"width\\\":32,\\\"layers\\\":[\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":2,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAAAFBJREFUaEPt1QERADAMArHi33SFfOagHBm7+Fv8/hOABsQTQCBeAJ8gAgjEE0AgXgArgAAC8QQQiBfACiCAQDwBBOIFsAIIIBBPAIF4AazAAzJOACHu+VYgAAAAAElFTkSuQmCC\\\\\\\"}]}\\\",\\\"{\\\\\\\"name\\\\\\\":\\\\\\\"Layer 1 (imported)\\\\\\\",\\\\\\\"opacity\\\\\\\":1,\\\\\\\"frameCount\\\\\\\":2,\\\\\\\"chunks\\\\\\\":[{\\\\\\\"layout\\\\\\\":[[0],[1]],\\\\\\\"base64PNG\\\\\\\":\\\\\\\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAYAAACinX6EAAAAAXNSR0IArs4c6QAAAmVJREFUaENjZBjhgHGE+59hNABGU8AID4HRLDDCEwDxhaCR4er/ag7fCYbXiv44mqSq/////ydoOQMDAyMjI0n2E6UY5HmQ5bAAcAmQAbslyU4Rw01MjIpEmUmMZ2BqiPU8SD3VA0BMLOG/jLQ32C2gAIB5HlcAgMSpGQikeB4WYKQEAsHYGg0AHCng4GxOhqtXn+BMyefOhxIMXGKyATkpgJSsQNCRoBQAc6hTtBM4C4Dyfnzsi5EbAOj5X0K8ERxGL17Wg+lhVQaAPARLBaAUcOsAJzzlZk0QxqgJTIzOMFAr+ZNTC5CS/MFqicmHyAEAUg/KBtMK3oK1Pnm6FW4EqLYABQpIjpqBQE45QGxNgDcAYPW/tjak3gcVeiC2fep3ggGgKLuPwbM4FKwvxd6JqIBGjwxyPA4zI8Q/i2HNxmlgLr7AIDsA9mx4As4O2FLAnIIGBjl9bQa3REgA7Jq/mmHVgukkBwK5AWBpZA+2f+V8SACEJ2bhtJ/sAICFNHprEFQ73L5aDnYAyNMWhnb/YWxishuyGkoDgBj7yQoAUFYA5XX02gDERw6ARxevMqi7ujN8ufGEYe0m+qcAYuwnKwBgsfRb9DbDvqX74JEGqiVYX6vCUwDIAaDY//uOYcACgJD9eAMgNuY4uBEE8igIgDwHY8N8jR4AIPEHB+aApYU5eeCBs/XYNrqWAcTaT7KjiMnHoHxPrAOIMY9UNaTYT7MAOHH+ELgARKZJ9Qi56tHthfGxmTcaAOSGMj59pCTBgbafZilgRJcBtIhVWplJkxRAK8fSwtzRAKBFqA4lM0d8CgAA2a1hMDfGwagAAAAASUVORK5CYII=\\\\\\\"}]}\\\"],\\\"hiddenFrames\\\":[]}}\",\"resourceNames\":[\"Invincible6\",\"Invincible7\"],\"name\":\"Invincible\"}}",
               "timeBetweenFrames": 0.3,
               "sprites": [
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Invincible3",
+                  "image": "Invincible6",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4387,27 +4832,27 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 7,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 26,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 26,
+                        "y": 27
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 7,
+                        "y": 27
                       }
                     ]
                   ]
                 },
                 {
                   "hasCustomCollisionMask": true,
-                  "image": "Invincible4",
+                  "image": "Invincible7",
                   "points": [],
                   "originPoint": {
                     "name": "origine",
@@ -4423,20 +4868,20 @@
                   "customCollisionMask": [
                     [
                       {
-                        "x": 0,
-                        "y": 0
+                        "x": 7,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 0
+                        "x": 26,
+                        "y": 7
                       },
                       {
-                        "x": 64,
-                        "y": 64
+                        "x": 26,
+                        "y": 27
                       },
                       {
-                        "x": 0,
-                        "y": 64
+                        "x": 7,
+                        "y": 27
                       }
                     ]
                   ]
@@ -4511,100 +4956,6 @@
           ]
         }
       ]
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Health_text",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "Text\n",
-      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-      "textAlignment": "left",
-      "characterSize": 15,
-      "color": {
-        "b": 5,
-        "g": 117,
-        "r": 65
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Text\n",
-        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 15,
-        "color": "65;117;5"
-      }
-    },
-    {
-      "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Damage_text",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [
-        {
-          "name": "Tween",
-          "type": "Tween::TweenBehavior"
-        }
-      ],
-      "string": "Text\n",
-      "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-      "textAlignment": "left",
-      "characterSize": 15,
-      "color": {
-        "b": 27,
-        "g": 2,
-        "r": 208
-      },
-      "content": {
-        "bold": false,
-        "isOutlineEnabled": true,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "Text\n",
-        "font": "1bee9bddf3765d016ea29c21d418cdb0e958d1cd9c0aaa8743f9e174cb486e71_Kenney Pixel Square.ttf",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 15,
-        "color": "208;2;27"
-      }
     },
     {
       "assetStoreId": "",
@@ -4817,6 +5168,300 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Health_vis",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Health_gain",
+          "doubleParameters": {
+            "padding": 3,
+            "thickness": 3
+          },
+          "stringParameters": {
+            "color": "49;121;54"
+          },
+          "booleanParameters": {}
+        },
+        {
+          "effectType": "Outline",
+          "name": "Health_lose",
+          "doubleParameters": {
+            "padding": 3,
+            "thickness": 3
+          },
+          "stringParameters": {
+            "color": "224;35;35"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [
+        {
+          "name": "Tween",
+          "type": "Tween::TweenBehavior"
+        }
+      ],
+      "content": {
+        "text": "+20",
+        "opacity": 255,
+        "scale": 0.5,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "fcc1ada16e6add83eaf9939e9b4fd692bc4473d3d2ea040acc07ce0a90af533e",
+      "name": "Projectile3",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "FireBullet",
+          "type": "FireBullet::FireBullet",
+          "FireCooldown": 0.1,
+          "HasJustFired": false,
+          "RotateBullet": true,
+          "FiringArc": 20,
+          "BulletQuantity": 1,
+          "AngleVariance": 0,
+          "BulletSpeedVariance": 0,
+          "AmmoQuantity": 0,
+          "ShotsPerReload": 0,
+          "ReloadDuration": 1,
+          "MaxAmmo": 0,
+          "ShotsBeforeNextReload": 0,
+          "TotalShotsFired": 0,
+          "TotalBulletsCreated": 0,
+          "StartingAmmo": 0,
+          "TotalReloadsCompleted": 0,
+          "UnlimitedAmmo": true,
+          "ReloadInProgress": false,
+          "HeatIncreasePerShot": 0,
+          "HeatLevel": 0,
+          "AutomaticReloading": true,
+          "OverheatDuration": 0,
+          "LinearCoolingRate": 0.1,
+          "ExponentialCoolingRate": 0.3,
+          "BulletLayer": "",
+          "RandomizedAngle": 0
+        },
+        {
+          "name": "Pathfinding",
+          "type": "PathfindingBehavior::PathfindingBehavior",
+          "acceleration": 400,
+          "allowDiagonals": true,
+          "angleOffset": 0,
+          "angularMaxSpeed": 180,
+          "cellHeight": 20,
+          "cellWidth": 20,
+          "extraBorder": 0,
+          "gridOffsetX": 0,
+          "gridOffsetY": 0,
+          "maxSpeed": 200,
+          "rotateObject": true,
+          "smoothingMaxCellGap": 1
+        },
+        {
+          "name": "YSort",
+          "type": "YSort::YSort"
+        }
+      ],
+      "animations": [
+        {
+          "name": "Projectile",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.125,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Fireball_Projectile_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 9
+                      },
+                      {
+                        "x": 0,
+                        "y": 9
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Fireball_Projectile_2.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 9
+                      },
+                      {
+                        "x": 0,
+                        "y": 9
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Fireball_Projectile_3.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 9
+                      },
+                      {
+                        "x": 0,
+                        "y": 9
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "d16df8b5c06f96e1e3e0bcb4d3ae5d0f84786d175b09bb7d86150750103b287e",
+      "name": "BarbarianHelm",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Barbarian Helm",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Barbarian Helm",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 0
+                      },
+                      {
+                        "x": 16,
+                        "y": 13
+                      },
+                      {
+                        "x": 0,
+                        "y": 13
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -4844,10 +5489,7 @@
             "objectName": "Key_acquired"
           },
           {
-            "objectName": "Damage_text"
-          },
-          {
-            "objectName": "Health_text"
+            "objectName": "Health_vis"
           },
           {
             "objectName": "Armor_Bar"
@@ -4867,7 +5509,13 @@
             "objectName": "Projectile3"
           },
           {
+            "objectName": "Projectile3_"
+          },
+          {
             "objectName": "IronChestplate"
+          },
+          {
+            "objectName": "BarbarianHelm"
           },
           {
             "objectName": "RedPotion"

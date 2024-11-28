@@ -11,14 +11,14 @@
   "uiSettings": {
     "grid": true,
     "gridType": "rectangular",
-    "gridWidth": 32,
-    "gridHeight": 32,
+    "gridWidth": 16,
+    "gridHeight": 16,
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
-    "gridAlpha": 0.8,
+    "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.3694269341636,
+    "zoomFactor": 0.904505288820216,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,9 +33,9 @@
       "name": "DinoMort",
       "persistentUuid": "a7306861-9b44-4b43-9ba2-95520b209d1c",
       "width": 0,
-      "x": 304,
-      "y": 307,
-      "zOrder": 1000,
+      "x": 152,
+      "y": 360,
+      "zOrder": 1014,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -63,15 +63,16 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 103,
       "keepRatio": true,
       "layer": "",
       "name": "Boss",
       "persistentUuid": "b3e17698-aaba-4168-a0bc-d269f91ea41f",
-      "width": 0,
-      "x": 361,
-      "y": 391,
+      "width": 103,
+      "x": 336,
+      "y": 272,
       "zOrder": 1010,
       "numberProperties": [],
       "stringProperties": [],
@@ -273,6 +274,22 @@
         }
       ],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "DinoShadow",
+      "persistentUuid": "418603d2-7b1c-4735-90f5-1ec640258389",
+      "width": 0,
+      "x": -200,
+      "y": 360,
+      "zOrder": 1013,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -396,6 +413,103 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "f0cf2c4a67ddc9337d0e8291d7c9fbb53b534650056defd1216a54cd1644c5f1",
+      "name": "Boss_Projectile2",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "Magic Charged Pellet_1",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": true,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.025,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Magic Charged Pellet_1.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 13
+                      },
+                      {
+                        "x": 21,
+                        "y": 13
+                      },
+                      {
+                        "x": 21,
+                        "y": 19
+                      },
+                      {
+                        "x": 11,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Magic Charged Pellet_1",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 11,
+                        "y": 13
+                      },
+                      {
+                        "x": 21,
+                        "y": 13
+                      },
+                      {
+                        "x": 21,
+                        "y": 19
+                      },
+                      {
+                        "x": 11,
+                        "y": 19
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -406,10 +520,98 @@
       },
       {
         "objectName": "Boss_Projectile"
+      },
+      {
+        "objectName": "Boss_Projectile2"
       }
     ]
   },
   "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "DepartScene"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "1.5",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "ZoomCamera"
+          },
+          "parameters": [
+            "",
+            "1.5",
+            "\"Main\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\8-bit-dungeon-251388.mp3",
+            "yes",
+            "30",
+            "1"
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "MettreX"
+          },
+          "parameters": [
+            "DinoShadow",
+            "=",
+            "DinoMort.X()"
+          ]
+        },
+        {
+          "type": {
+            "value": "MettreY"
+          },
+          "parameters": [
+            "DinoShadow",
+            "=",
+            "DinoMort.Y()"
+          ]
+        },
+        {
+          "type": {
+            "value": "FlippableCapability::FlippableBehavior::FlipX"
+          },
+          "parameters": [
+            "Boss",
+            "Flippable",
+            "yes"
+          ]
+        }
+      ]
+    },
     {
       "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
@@ -523,7 +725,7 @@
               },
               "parameters": [
                 "",
-                "Damage_text",
+                "Health_vis",
                 "DinoMort.X()",
                 "DinoMort.Y()-30",
                 "\"Main\""
@@ -534,7 +736,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "Damage_text",
+                "Health_vis",
                 "Text",
                 "=",
                 "\"-20\""
@@ -545,10 +747,10 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "Damage_text",
+                "Health_vis",
                 "Tween",
                 "\"Lift\"",
-                "Damage_text.Y()-30",
+                "Health_vis.Y()-30",
                 "\"linear\"",
                 ".8",
                 "yes"
@@ -559,7 +761,7 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "Damage_text",
+                "Health_vis",
                 "Tween",
                 "\"Fade\"",
                 "0",
@@ -567,56 +769,29 @@
                 "1",
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_gain\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_lose\"",
+                "yes"
+              ]
             }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "2",
-            "\"Main\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\8-bit-dungeon-251388.mp3",
-            "yes",
-            "30",
-            "1"
           ]
         }
       ]
@@ -1005,6 +1180,155 @@
       "colorR": 74,
       "creationTime": 0,
       "folded": true,
+      "name": "Armor Patch",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "folded": true,
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Armor",
+                ">=",
+                "100"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "BarbarianHelm",
+                "DinoMort.X()+6",
+                "DinoMort.Y()-2",
+                "\"Main\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Health_vis",
+                    "DinoMort.X()",
+                    "DinoMort.Y()-30",
+                    "\"Main\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Text",
+                    "=",
+                    "\"Fully patched!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Tween",
+                    "\"Lift\"",
+                    "Health_vis.Y()-30",
+                    "\"linear\"",
+                    ".8",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Tween",
+                    "\"Fade\"",
+                    "0",
+                    "\"linear\"",
+                    "1",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Effect",
+                    "\"Health_gain\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Effect",
+                    "\"Health_lose\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "BarbarianHelm",
+                "=",
+                "DinoMort.X()+6",
+                "=",
+                "DinoMort.Y()-2"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
       "name": "Projectile Attack",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1282,6 +1606,7 @@
           "colorG": 117,
           "colorR": 65,
           "creationTime": 0,
+          "folded": true,
           "name": "Setting Direction Variables for Projectile",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -1489,6 +1814,7 @@
       "comment": "Player Takes Damage (Collision Test)"
     },
     {
+      "folded": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -1530,6 +1856,87 @@
             "DinoMort",
             "Monster",
             ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "Health_vis",
+                "DinoMort.X()",
+                "DinoMort.Y()-30",
+                "\"Main\""
+              ]
+            },
+            {
+              "type": {
+                "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+              },
+              "parameters": [
+                "Health_vis",
+                "Text",
+                "=",
+                "\"-20\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+              },
+              "parameters": [
+                "Health_vis",
+                "Tween",
+                "\"Lift\"",
+                "Health_vis.Y()-30",
+                "\"linear\"",
+                ".8",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+              },
+              "parameters": [
+                "Health_vis",
+                "Tween",
+                "\"Fade\"",
+                "0",
+                "\"linear\"",
+                "1",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_lose\"",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_gain\"",
+                "no"
+              ]
+            }
           ]
         }
       ]
@@ -1738,7 +2145,7 @@
               },
               "parameters": [
                 "",
-                "Health_text",
+                "Health_vis",
                 "DinoMort.X()",
                 "DinoMort.Y()-30",
                 "\"Main\""
@@ -1749,7 +2156,7 @@
                 "value": "TextContainerCapability::TextContainerBehavior::SetValue"
               },
               "parameters": [
-                "Health_text",
+                "Health_vis",
                 "Text",
                 "=",
                 "\"+20\""
@@ -1760,10 +2167,10 @@
                 "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
               },
               "parameters": [
-                "Health_text",
+                "Health_vis",
                 "Tween",
                 "\"Lift\"",
-                "Health_text.Y()-30",
+                "Health_vis.Y()-30",
                 "\"linear\"",
                 ".8",
                 "yes"
@@ -1774,13 +2181,35 @@
                 "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
               },
               "parameters": [
-                "Health_text",
+                "Health_vis",
                 "Tween",
                 "\"Fade\"",
                 "0",
                 "\"linear\"",
                 "1",
-                ""
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_gain\"",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "EffectCapability::EffectBehavior::EnableEffect"
+              },
+              "parameters": [
+                "Health_vis",
+                "Effect",
+                "\"Health_lose\"",
+                "no"
               ]
             }
           ]
@@ -1840,6 +2269,18 @@
             "IronChestplate",
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\1up 1.aac",
+            "",
+            "30",
+            "1"
+          ]
         }
       ]
     },
@@ -1895,15 +2336,11 @@
       ]
     },
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": []
-    },
-    {
       "colorB": 228,
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2173,7 +2610,7 @@
                     "FireBullet",
                     "Boss.X()",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X()",
                     "DinoMort.Y()",
                     "200",
@@ -2230,7 +2667,7 @@
                     "FireBullet",
                     "Boss.X()",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X()",
                     "DinoMort.Y()",
                     "200",
@@ -2246,7 +2683,7 @@
                     "FireBullet",
                     "Boss.X() + 10",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X() + 75",
                     "DinoMort.Y()",
                     "200",
@@ -2262,7 +2699,7 @@
                     "FireBullet",
                     "Boss.X() - 10",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X() - 75",
                     "DinoMort.Y()",
                     "200",
@@ -2521,7 +2958,7 @@
                     "FireBullet",
                     "Boss.X()",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X()",
                     "DinoMort.Y()",
                     "200",
@@ -2537,7 +2974,7 @@
                     "FireBullet",
                     "Boss.X()",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X()",
                     "DinoMort.Y() - 75",
                     "200",
@@ -2553,7 +2990,7 @@
                     "FireBullet",
                     "Boss.X()",
                     "Boss.Y()",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort.X()",
                     "DinoMort.Y() + 75",
                     "200",
@@ -2573,11 +3010,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "type": "BuiltinCommonInstructions::Standard",
-              "conditions": [],
-              "actions": []
             }
           ],
           "parameters": []
@@ -2688,6 +3120,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -2744,6 +3177,87 @@
                   "parameters": [
                     "Projectile3",
                     ""
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_vis",
+                        "Boss.X()",
+                        "Boss.Y()-30",
+                        "\"Main\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Text",
+                        "=",
+                        "\"Invincible\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Lift\"",
+                        "Health_vis.Y()-30",
+                        "\"linear\"",
+                        ".8",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Fade\"",
+                        "0",
+                        "\"linear\"",
+                        "1",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_gain\"",
+                        "no"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_lose\"",
+                        "no"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -2819,7 +3333,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "90",
                     "200",
                     ""
@@ -2834,7 +3348,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "-90",
                     "200",
                     ""
@@ -2849,7 +3363,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "-135",
                     "200",
                     ""
@@ -2864,7 +3378,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "-45",
                     "200",
                     ""
@@ -2879,7 +3393,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "45",
                     "200",
                     ""
@@ -2894,7 +3408,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "135",
                     "200",
                     ""
@@ -2909,7 +3423,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "-180",
                     "200",
                     ""
@@ -2924,7 +3438,7 @@
                     "FireBullet",
                     "Boss.X() + 23",
                     "Boss.Y() + 25",
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "360",
                     "200",
                     ""
@@ -2962,7 +3476,7 @@
                     "Boss",
                     "Animation",
                     "=",
-                    "\"NewSprite\""
+                    "\"BossIdle\""
                   ]
                 },
                 {
@@ -3055,6 +3569,7 @@
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3317,7 +3832,7 @@
                         "FireBullet",
                         "Boss.X() + 23",
                         "Boss.Y() + 25",
-                        "Boss_Projectile",
+                        "Boss_Projectile2",
                         "DinoMort",
                         "200",
                         ""
@@ -3543,6 +4058,7 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
+          "folded": true,
           "name": "Basic Mechanics",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3633,6 +4149,7 @@
               "comment": "Damage from Boss\n"
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3640,7 +4157,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort",
                     "",
                     "",
@@ -3677,9 +4194,91 @@
                     "10"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_vis",
+                        "DinoMort.X()",
+                        "DinoMort.Y()-30",
+                        "\"Main\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Text",
+                        "=",
+                        "\"-10\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Lift\"",
+                        "Health_vis.Y()-30",
+                        "\"linear\"",
+                        ".8",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Fade\"",
+                        "0",
+                        "\"linear\"",
+                        "1",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_lose\"",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_gain\"",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3687,7 +4286,7 @@
                     "value": "CollisionNP"
                   },
                   "parameters": [
-                    "Boss_Projectile",
+                    "Boss_Projectile2",
                     "DinoMort",
                     "",
                     "",
@@ -3724,9 +4323,91 @@
                     "10"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_vis",
+                        "DinoMort.X()",
+                        "DinoMort.Y()-30",
+                        "\"Main\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Text",
+                        "=",
+                        "\"-10\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Lift\"",
+                        "Health_vis.Y()-30",
+                        "\"linear\"",
+                        ".8",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Fade\"",
+                        "0",
+                        "\"linear\"",
+                        "1",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_lose\"",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_gain\"",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3771,9 +4452,91 @@
                     "50"
                   ]
                 }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_vis",
+                        "DinoMort.X()",
+                        "DinoMort.Y()-30",
+                        "\"Main\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Text",
+                        "=",
+                        "\"-50\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Lift\"",
+                        "Health_vis.Y()-30",
+                        "\"linear\"",
+                        ".8",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Fade\"",
+                        "0",
+                        "\"linear\"",
+                        "1",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_lose\"",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_gain\"",
+                        "no"
+                      ]
+                    }
+                  ]
+                }
               ]
             },
             {
+              "folded": true,
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [
                 {
@@ -3816,6 +4579,87 @@
                     "Armor",
                     "-",
                     "50"
+                  ]
+                }
+              ],
+              "events": [
+                {
+                  "type": "BuiltinCommonInstructions::Standard",
+                  "conditions": [],
+                  "actions": [
+                    {
+                      "type": {
+                        "value": "Create"
+                      },
+                      "parameters": [
+                        "",
+                        "Health_vis",
+                        "DinoMort.X()",
+                        "DinoMort.Y()-30",
+                        "\"Main\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Text",
+                        "=",
+                        "\"-50\""
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Lift\"",
+                        "Health_vis.Y()-30",
+                        "\"linear\"",
+                        ".8",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Tween",
+                        "\"Fade\"",
+                        "0",
+                        "\"linear\"",
+                        "1",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_lose\"",
+                        "yes"
+                      ]
+                    },
+                    {
+                      "type": {
+                        "value": "EffectCapability::EffectBehavior::EnableEffect"
+                      },
+                      "parameters": [
+                        "Health_vis",
+                        "Effect",
+                        "\"Health_gain\"",
+                        "no"
+                      ]
+                    }
                   ]
                 }
               ]
@@ -3907,7 +4751,7 @@
             "value": "ChangePlan"
           },
           "parameters": [
-            "Boss_Projectile",
+            "Boss_Projectile2",
             "=",
             "500"
           ]
@@ -4062,6 +4906,10 @@
     {
       "name": "YSort",
       "type": "YSort::YSort"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }
