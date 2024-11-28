@@ -724,6 +724,14 @@
           "parameters": [
             ""
           ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Health_vis"
+          ]
         }
       ]
     },
