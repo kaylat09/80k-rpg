@@ -208,6 +208,10 @@
     {
       "name": "YSort",
       "type": "YSort::YSort"
+    },
+    {
+      "name": "cursor",
+      "type": "MouseHelper::cursor"
     }
   ]
 }

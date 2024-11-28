@@ -16,9 +16,9 @@
     "gridOffsetX": 0,
     "gridOffsetY": 0,
     "gridColor": 10401023,
-    "gridAlpha": 0.5,
+    "gridAlpha": 0.3,
     "snap": true,
-    "zoomFactor": 0.5671180070867078,
+    "zoomFactor": 0.6264445134675829,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -1198,7 +1198,7 @@
       "isLocked": false,
       "name": "Text",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
