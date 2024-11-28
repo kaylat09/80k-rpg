@@ -137,6 +137,40 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 9,
+      "height": 532,
+      "keepRatio": true,
+      "layer": "Text",
+      "name": "Options_screen",
+      "persistentUuid": "9e36e977-fb8c-42ed-8f06-847be5164c15",
+      "width": 443,
+      "x": 159,
+      "y": 38,
+      "zOrder": 11,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 400,
+      "keepRatio": true,
+      "layer": "Text",
+      "name": "Credits_Bitmap",
+      "persistentUuid": "2f6791db-3b8d-477b-9605-4e412098ddd9",
+      "width": 273,
+      "x": 241,
+      "y": 80,
+      "zOrder": 12,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -426,14 +460,14 @@
       "effects": [],
       "behaviors": [],
       "content": {
-        "text": "lorem ipsum",
+        "text": "PRESS ESC TO EXIT\n\n1. All audio files and music tracks are from Gdevelop asset store.\n\n2. Player sprite is from GDevelop asset store.\n\n3. Armor and potion items are from Gdevelop asset store.\n\n4. Tilemap is by Szadi Art. on itch.io.",
         "opacity": 255,
         "scale": 1,
         "fontSize": 20,
         "tint": "255;255;255",
         "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
         "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
-        "align": "left",
+        "align": "center",
         "wordWrap": true
       }
     },
@@ -633,6 +667,9 @@
     "folderName": "__ROOT",
     "children": [
       {
+        "objectName": "Credits_Bitmap"
+      },
+      {
         "objectName": "Play_button"
       },
       {
@@ -646,9 +683,6 @@
       },
       {
         "objectName": "Exit_button"
-      },
-      {
-        "objectName": "Credits_Bitmap"
       },
       {
         "objectName": "Background_dungeon"
@@ -687,6 +721,23 @@
             "yes",
             "100",
             "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Text\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Credits_Bitmap"
           ]
         }
       ]
@@ -883,6 +934,24 @@
         },
         {
           "type": {
+            "value": "ShowLayer"
+          },
+          "parameters": [
+            "",
+            "\"Text\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Montre"
+          },
+          "parameters": [
+            "Credits_Bitmap",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Wait"
           },
           "parameters": [
@@ -898,6 +967,47 @@
             "Animation",
             "=",
             "\"Credits\""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "Escape"
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "HideLayer"
+          },
+          "parameters": [
+            "",
+            "\"Text\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Cache"
+          },
+          "parameters": [
+            "Credits_Bitmap"
           ]
         }
       ]
@@ -1053,7 +1163,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Text",
+      "name": "Main",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
@@ -1086,7 +1196,7 @@
       "followBaseLayerCamera": false,
       "isLightingLayer": false,
       "isLocked": false,
-      "name": "Main",
+      "name": "Text",
       "renderingType": "",
       "visibility": true,
       "cameras": [],

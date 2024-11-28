@@ -1751,67 +1751,6 @@
     {
       "adaptCollisionMaskAutomatically": true,
       "assetStoreId": "",
-      "name": "Options_screen",
-      "type": "Sprite",
-      "updateIfNotVisible": false,
-      "variables": [],
-      "effects": [],
-      "behaviors": [],
-      "animations": [
-        {
-          "name": "Tablet_tutorial",
-          "useMultipleDirections": false,
-          "directions": [
-            {
-              "looping": false,
-              "metadata": "{\"pskl\":{}}",
-              "timeBetweenFrames": 0.08,
-              "sprites": [
-                {
-                  "hasCustomCollisionMask": true,
-                  "image": "Tablet_tutorial",
-                  "points": [],
-                  "originPoint": {
-                    "name": "origine",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "centerPoint": {
-                    "automatic": true,
-                    "name": "centre",
-                    "x": 0,
-                    "y": 0
-                  },
-                  "customCollisionMask": [
-                    [
-                      {
-                        "x": 0,
-                        "y": 0
-                      },
-                      {
-                        "x": 50,
-                        "y": 0
-                      },
-                      {
-                        "x": 50,
-                        "y": 60
-                      },
-                      {
-                        "x": 0,
-                        "y": 60
-                      }
-                    ]
-                  ]
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "adaptCollisionMaskAutomatically": true,
-      "assetStoreId": "",
       "name": "X_exit",
       "type": "Sprite",
       "updateIfNotVisible": false,
@@ -1877,9 +1816,6 @@
       {
         "folderName": "UI",
         "children": [
-          {
-            "objectName": "Options_screen"
-          },
           {
             "objectName": "X_exit"
           },
@@ -3063,6 +2999,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Key, Gate, and Boss Door Interactions",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
