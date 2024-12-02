@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1.3920372575771662,
+    "snap": true,
+    "zoomFactor": 0.5685495294107176,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,16 +26,85 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 114,
       "keepRatio": true,
       "layer": "",
-      "name": "Game_Over_Text",
-      "persistentUuid": "67ce78a2-d642-45df-89e1-bf44d4e5851b",
-      "width": 0,
-      "x": 337,
-      "y": 267,
+      "name": "youwin",
+      "persistentUuid": "55a2bc16-79a9-4cdf-9fda-e51e46ebc3eb",
+      "width": 294,
+      "x": 250,
+      "y": 107,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 1069,
+      "keepRatio": true,
+      "layer": "Background",
+      "name": "Background_dungeon",
+      "persistentUuid": "8031680e-bc1c-4b6d-9fd8-f785f61a5ad0",
+      "width": 1833,
+      "x": -1033,
+      "y": -432,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 48,
+      "keepRatio": true,
+      "layer": "",
+      "name": "youwin_message",
+      "persistentUuid": "cc369848-a686-489d-84b8-32938cb7a2ac",
+      "width": 484,
+      "x": 188,
+      "y": 174,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 73,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Play_button",
+      "persistentUuid": "a7f059d0-919b-4f6b-b652-372ccb9049c1",
+      "width": 192,
+      "x": 320,
+      "y": 279,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 74,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Exit_button",
+      "persistentUuid": "8e57ef28-9980-47d9-b6c5-d94f4db27e52",
+      "width": 192,
+      "x": 320,
+      "y": 374,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -44,44 +113,53 @@
   "objects": [
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Game_Over_Text",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "youwin",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 4,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "YOU WIN!",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "97;161;26",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "youwin_message",
+      "type": "BitmapText::BitmapTextObject",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "YOU WIN",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 33,
-        "g": 211,
-        "r": 126
-      },
       "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "YOU WIN",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "126;211;33"
+        "text": "Congrats on patching yourself up, adventurer!",
+        "opacity": 255,
+        "scale": 1.2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "center",
+        "wordWrap": true
       }
     }
   ],
@@ -89,12 +167,207 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Game_Over_Text"
+        "objectName": "youwin"
+      },
+      {
+        "objectName": "youwin_message"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CacheSouris"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Exit_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Exit_button",
+            "Animation",
+            "=",
+            "\"Exit_press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Quit"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Play_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Play_button",
+            "Animation",
+            "=",
+            "\"Play press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\1up 1.aac",
+            "",
+            "50",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level1\"",
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,

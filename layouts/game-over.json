@@ -9,7 +9,7 @@
   "title": "",
   "v": 209,
   "uiSettings": {
-    "grid": false,
+    "grid": true,
     "gridType": "rectangular",
     "gridWidth": 32,
     "gridHeight": 32,
@@ -17,8 +17,8 @@
     "gridOffsetY": 0,
     "gridColor": 10401023,
     "gridAlpha": 0.8,
-    "snap": false,
-    "zoomFactor": 1.3920372575771662,
+    "snap": true,
+    "zoomFactor": 0.4507615891327295,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -26,16 +26,102 @@
   "instances": [
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 64,
       "keepRatio": true,
       "layer": "",
-      "name": "Game_Over_Text",
-      "persistentUuid": "67ce78a2-d642-45df-89e1-bf44d4e5851b",
-      "width": 0,
-      "x": 337,
-      "y": 267,
+      "name": "gameover",
+      "persistentUuid": "53c4d0a3-0105-4895-80bb-4bad32c539f4",
+      "width": 390,
+      "x": 218,
+      "y": 108,
       "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Play_button",
+      "persistentUuid": "b93500f0-9a84-4b01-8b38-bee8038aad49",
+      "width": 167,
+      "x": 320,
+      "y": 320,
+      "zOrder": 2,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 64,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Exit_button",
+      "persistentUuid": "11475e35-77bb-49fe-996c-66d750c484e5",
+      "width": 167,
+      "x": 320,
+      "y": 416,
+      "zOrder": 3,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Cursor",
+      "persistentUuid": "6ff9dda4-72df-416f-84b2-b6dd03962fd4",
+      "width": 32,
+      "x": 576,
+      "y": 320,
+      "zOrder": 4,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 1227,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Background_dungeon",
+      "persistentUuid": "d1cc7508-7176-4a56-9ae5-6088f468545d",
+      "width": 2102,
+      "x": -1302,
+      "y": -587,
+      "zOrder": 0,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 60,
+      "keepRatio": true,
+      "layer": "",
+      "name": "gameover_message",
+      "persistentUuid": "fd0a5c5f-a8ec-4b8f-aea1-183ec22b0876",
+      "width": 583,
+      "x": 201,
+      "y": 178,
+      "zOrder": 5,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -44,44 +130,53 @@
   "objects": [
     {
       "assetStoreId": "",
-      "bold": false,
-      "italic": false,
-      "name": "Game_Over_Text",
-      "smoothed": true,
-      "type": "TextObject::Text",
-      "underlined": false,
+      "name": "gameover",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Effect",
+          "doubleParameters": {
+            "padding": 4,
+            "thickness": 4
+          },
+          "stringParameters": {
+            "color": "255;255;255"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "content": {
+        "text": "GAME OVER!",
+        "opacity": 255,
+        "scale": 3,
+        "fontSize": 20,
+        "tint": "208;2;27",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "gameover_message",
+      "type": "BitmapText::BitmapTextObject",
       "variables": [],
       "effects": [],
       "behaviors": [],
-      "string": "GAME OVER!",
-      "font": "",
-      "textAlignment": "left",
-      "characterSize": 20,
-      "color": {
-        "b": 0,
-        "g": 0,
-        "r": 255
-      },
       "content": {
-        "bold": false,
-        "isOutlineEnabled": false,
-        "isShadowEnabled": false,
-        "italic": false,
-        "outlineColor": "255;255;255",
-        "outlineThickness": 2,
-        "shadowAngle": 90,
-        "shadowBlurRadius": 2,
-        "shadowColor": "0;0;0",
-        "shadowDistance": 4,
-        "shadowOpacity": 127,
-        "smoothed": true,
-        "underlined": false,
-        "text": "GAME OVER!",
-        "font": "",
-        "textAlignment": "left",
-        "verticalTextAlignment": "top",
-        "characterSize": 20,
-        "color": "255;0;0"
+        "text": "You have failed to patch yourself up...",
+        "opacity": 255,
+        "scale": 1.5,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "center",
+        "wordWrap": true
       }
     }
   ],
@@ -89,12 +184,207 @@
     "folderName": "__ROOT",
     "children": [
       {
-        "objectName": "Game_Over_Text"
+        "objectName": "gameover"
+      },
+      {
+        "objectName": "gameover_message"
       }
     ]
   },
-  "events": [],
+  "events": [
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [],
+      "actions": [
+        {
+          "type": {
+            "value": "CacheSouris"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Play_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Play_button",
+            "Animation",
+            "=",
+            "\"Play press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "PlaySound"
+          },
+          "parameters": [
+            "",
+            "assets\\1up 1.aac",
+            "",
+            "50",
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
+            "value": "Scene"
+          },
+          "parameters": [
+            "",
+            "\"Level1\"",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
+            "value": "MouseButtonPressed"
+          },
+          "parameters": [
+            "",
+            "Left"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::And"
+          },
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "Exit_button",
+                "",
+                "",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "AnimatableCapability::AnimatableBehavior::SetName"
+          },
+          "parameters": [
+            "Exit_button",
+            "Animation",
+            "=",
+            "\"Exit_press\""
+          ]
+        },
+        {
+          "type": {
+            "value": "Quit"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ]
+    }
+  ],
   "layers": [
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Background",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
     {
       "ambientLightColorB": 200,
       "ambientLightColorG": 200,
