@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Left 2 Live",
-    "description": "What's an adventurer without their trusty armor? Conquer the dungeons you have found yourself in and collect armor to patch yourself up! ",
+    "description": "What's an adventurer without their trusty armor? Conquer the dungeons you have found yourself in and collect armor to patch yourself up! \n\n- WASD to move, SHIFT to sprint, and SPACE to attack enemies.\n- Collect armor to patch yourself up and progress through the story!\n\nCREDITS (in more detail)\nStart screen tutorial: https://www.youtube.com/watch?v=5L-c4CFxi8I&t=367s&ab_channel=QueueTheGameDev\nDamage visual tutorial: https://www.youtube.com/watch?v=LLPtMO_ov-w&ab_channel=GDevelop\nTilemap: https://szadiart.itch.io/rogue-fantasy-catacombs\nMusic and Sound by Kaden_Cook on Pixabay or GDevelop asset store\n\nPresentation (in-class explanation)\nLink: https://docs.google.com/presentation/d/1Sw0VLHa9RrQuQIL1EuatMue2jFjEvSZLrCCedSOozgQ/edit?usp=sharing",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 600,

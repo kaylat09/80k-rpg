@@ -3523,13 +3523,21 @@
         },
         {
           "type": {
-            "value": "NumberObjectVariable"
+            "value": "BuiltinCommonInstructions::And"
           },
-          "parameters": [
-            "DinoMort",
-            "Armor",
-            "<",
-            "100"
+          "parameters": [],
+          "subInstructions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Armor",
+                "<",
+                "100"
+              ]
+            }
           ]
         },
         {
