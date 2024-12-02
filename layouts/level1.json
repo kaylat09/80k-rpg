@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9779298859669654,
+    "zoomFactor": 0.9460294603000186,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -402,9 +402,9 @@
       "layer": "Options_tutorial",
       "name": "Tutorial",
       "persistentUuid": "5450b836-b046-465e-9c39-47ef70c96b1c",
-      "width": 336,
-      "x": 235,
-      "y": 117,
+      "width": 214,
+      "x": 368,
+      "y": 160,
       "zOrder": 1025,
       "numberProperties": [],
       "stringProperties": [],
@@ -616,6 +616,39 @@
       "x": 704,
       "y": 432,
       "zOrder": 1005,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "Options_tutorial",
+      "name": "PRESS_ESC_TO_EXIT",
+      "persistentUuid": "04c003dc-5d75-4465-b69e-489ce118df42",
+      "width": 0,
+      "x": 238,
+      "y": 112,
+      "zOrder": 1027,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 375,
+      "keepRatio": true,
+      "layer": "Options_tutorial",
+      "name": "WASD",
+      "persistentUuid": "6b14937b-95ed-4a8b-bb02-4c8ae8e94546",
+      "width": 129,
+      "x": 224,
+      "y": 142,
+      "zOrder": 1028,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1268,6 +1301,186 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "f0c3d7ae6099e3b9b8beed4e30b555107550b4fb2a5879e984a014b1e06865bf",
+      "name": "Yes",
+      "type": "PanelSpriteButton::PanelSpriteButton",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "LeftPadding": 0,
+        "RightPadding": 0,
+        "PressedLabelOffsetY": 4,
+        "BottomPadding": 6,
+        "TopPadding": 0,
+        "HoveredFadeOutDuration": 0
+      },
+      "childrenContent": {
+        "Hovered": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Transparent Button With White Blue Border_Hovered.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Idle": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Transparent Button With White Blue Border_Idle.png",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        },
+        "Label": {
+          "bold": false,
+          "italic": false,
+          "smoothed": true,
+          "underlined": false,
+          "string": "CONTINUE",
+          "font": "Kenney Mini Square.ttf",
+          "textAlignment": "center",
+          "characterSize": 25,
+          "color": {
+            "b": 255,
+            "g": 255,
+            "r": 255
+          },
+          "content": {
+            "bold": false,
+            "isOutlineEnabled": false,
+            "isShadowEnabled": false,
+            "italic": false,
+            "outlineColor": "255;255;255",
+            "outlineThickness": 2,
+            "shadowAngle": 90,
+            "shadowBlurRadius": 2,
+            "shadowColor": "0;0;0",
+            "shadowDistance": 4,
+            "shadowOpacity": 127,
+            "smoothed": true,
+            "underlined": false,
+            "text": "CONTINUE",
+            "font": "Kenney Mini Square.ttf",
+            "textAlignment": "center",
+            "verticalTextAlignment": "top",
+            "characterSize": 25,
+            "color": "255;255;255"
+          }
+        },
+        "Pressed": {
+          "bottomMargin": 10,
+          "height": 64,
+          "leftMargin": 6,
+          "rightMargin": 6,
+          "texture": "Transparent Button With White Blue Border_Pressed.png2",
+          "tiled": false,
+          "topMargin": 10,
+          "width": 192
+        }
+      }
+    },
+    {
+      "assetStoreId": "817257e841c9e10fdea43f6175e11586193fa41fc1ad8364af20bb6b56717bc0",
+      "bottomMargin": 16,
+      "height": 48,
+      "leftMargin": 16,
+      "name": "Dialogue",
+      "rightMargin": 16,
+      "texture": "Default panel-transparent-center (16).png3",
+      "tiled": false,
+      "topMargin": 16,
+      "type": "PanelSpriteObject::PanelSprite",
+      "width": 48,
+      "variables": [],
+      "effects": [],
+      "behaviors": []
+    },
+    {
+      "assetStoreId": "",
+      "name": "PRESS_ESC_TO_EXIT",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "PRESS ESC TO ESCAPE",
+        "opacity": 255,
+        "scale": 1.2,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "center",
+        "wordWrap": true
+      }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "WASD",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "NewSprite",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "NewSprite65",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 1,
+                        "y": 1
+                      },
+                      {
+                        "x": 30,
+                        "y": 1
+                      },
+                      {
+                        "x": 30,
+                        "y": 81
+                      },
+                      {
+                        "x": 1,
+                        "y": 81
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -1283,7 +1496,19 @@
             "objectName": "GateDoor"
           },
           {
+            "objectName": "WASD"
+          },
+          {
             "objectName": "BossDoor"
+          },
+          {
+            "objectName": "Yes"
+          },
+          {
+            "objectName": "PRESS_ESC_TO_EXIT"
+          },
+          {
+            "objectName": "Dialogue"
           },
           {
             "objectName": "playerSpawn"
@@ -4106,6 +4331,39 @@
       "isLightingLayer": false,
       "isLocked": false,
       "name": "HUD",
+      "renderingType": "",
+      "visibility": true,
+      "cameras": [],
+      "effects": [
+        {
+          "effectType": "Scene3D::HemisphereLight",
+          "name": "3D Light",
+          "doubleParameters": {
+            "elevation": 45,
+            "intensity": 1,
+            "rotation": 0
+          },
+          "stringParameters": {
+            "groundColor": "64;64;64",
+            "skyColor": "255;255;255",
+            "top": "Y-"
+          },
+          "booleanParameters": {}
+        }
+      ]
+    },
+    {
+      "ambientLightColorB": 200,
+      "ambientLightColorG": 200,
+      "ambientLightColorR": 200,
+      "camera3DFarPlaneDistance": 10000,
+      "camera3DFieldOfView": 45,
+      "camera3DNearPlaneDistance": 3,
+      "cameraType": "",
+      "followBaseLayerCamera": false,
+      "isLightingLayer": false,
+      "isLocked": false,
+      "name": "Dialouge",
       "renderingType": "",
       "visibility": true,
       "cameras": [],
