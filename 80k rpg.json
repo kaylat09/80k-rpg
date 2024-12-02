@@ -21,7 +21,7 @@
     "useExternalSourceFiles": false,
     "version": "1.0.0",
     "name": "Left 2 Live",
-    "description": "",
+    "description": "What's an adventurer without their trusty armor? Conquer the dungeons you have found yourself in and collect armor to patch yourself up! ",
     "author": "",
     "windowWidth": 800,
     "windowHeight": 600,
@@ -78,10 +78,20 @@
       "placement": "bottom-left",
       "showWatermark": true
     },
-    "authorIds": [],
-    "authorUsernames": [],
-    "categories": [],
-    "playableDevices": [],
+    "authorIds": [
+      "gWSC9omFX1cWg8wPeT5Bg7bMhgq1"
+    ],
+    "authorUsernames": [
+      "kitany"
+    ],
+    "categories": [
+      "action",
+      "rpg",
+      "adventure"
+    ],
+    "playableDevices": [
+      "keyboard"
+    ],
     "extensionProperties": [],
     "platforms": [
       {
