@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9045052888202162,
+    "zoomFactor": 0.9991260522560059,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -151,8 +151,8 @@
       "name": "IronChestplate",
       "persistentUuid": "ff9f14d4-e587-42ff-9b3e-808a80c9e82c",
       "width": 0,
-      "x": 245,
-      "y": 217,
+      "x": 288,
+      "y": 208,
       "zOrder": 1006,
       "numberProperties": [],
       "stringProperties": [],
@@ -167,8 +167,8 @@
       "name": "IronChestplate",
       "persistentUuid": "573a28ae-d9f3-45a3-964d-ab32e52e8232",
       "width": 0,
-      "x": 515,
-      "y": 214,
+      "x": 544,
+      "y": 256,
       "zOrder": 1007,
       "numberProperties": [],
       "stringProperties": [],
@@ -183,8 +183,8 @@
       "name": "IronChestplate",
       "persistentUuid": "54fa24fe-56e3-4887-8b2d-5479ca8f43ee",
       "width": 0,
-      "x": 518,
-      "y": 424,
+      "x": 544,
+      "y": 384,
       "zOrder": 1008,
       "numberProperties": [],
       "stringProperties": [],
@@ -287,6 +287,70 @@
       "x": -200,
       "y": 360,
       "zOrder": 1013,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronChestplate",
+      "persistentUuid": "e3616cd5-7e4b-49a6-825a-fa94b525beb1",
+      "width": 0,
+      "x": 304,
+      "y": 448,
+      "zOrder": 1009,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronChestplate",
+      "persistentUuid": "a6487160-667c-47c3-8390-4a81e7790e31",
+      "width": 0,
+      "x": 496,
+      "y": 432,
+      "zOrder": 1008,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronChestplate",
+      "persistentUuid": "b25ea577-da46-4581-b479-8921f0d7f947",
+      "width": 0,
+      "x": 496,
+      "y": 208,
+      "zOrder": 1007,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "IronChestplate",
+      "persistentUuid": "5fe9c020-8a3e-4ee4-8246-dca11ba4c835",
+      "width": 0,
+      "x": 240,
+      "y": 256,
+      "zOrder": 1006,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -528,89 +592,234 @@
   },
   "events": [
     {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Beginning",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
         {
-          "type": {
-            "value": "DepartScene"
-          },
-          "parameters": [
-            ""
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "IronChestplate"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "IronChestplate",
+                "Animation",
+                "=",
+                "\"Helmet\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "IronChestplate"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "IronChestplate",
+                "Animation",
+                "=",
+                "\"Helmet\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "IronChestplate"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "IronChestplate",
+                "Animation",
+                "=",
+                "\"Helmet\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "AjoutHasard"
+              },
+              "parameters": [
+                "",
+                "IronChestplate"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "IronChestplate",
+                "Animation",
+                "=",
+                "\"Helmet\""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "DepartScene"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "1.5",
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "ZoomCamera"
+              },
+              "parameters": [
+                "",
+                "1.5",
+                "\"Main\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "assets\\8-bit-dungeon-251388.mp3",
+                "yes",
+                "30",
+                "1"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreX"
+              },
+              "parameters": [
+                "DinoShadow",
+                "=",
+                "DinoMort.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "MettreY"
+              },
+              "parameters": [
+                "DinoShadow",
+                "=",
+                "DinoMort.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "Boss",
+                "Flippable",
+                "yes"
+              ]
+            }
           ]
         }
       ],
-      "actions": [
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "1.5",
-            "",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "ZoomCamera"
-          },
-          "parameters": [
-            "",
-            "1.5",
-            "\"Main\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "assets\\8-bit-dungeon-251388.mp3",
-            "yes",
-            "30",
-            "1"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "MettreX"
-          },
-          "parameters": [
-            "DinoShadow",
-            "=",
-            "DinoMort.X()"
-          ]
-        },
-        {
-          "type": {
-            "value": "MettreY"
-          },
-          "parameters": [
-            "DinoShadow",
-            "=",
-            "DinoMort.Y()"
-          ]
-        },
-        {
-          "type": {
-            "value": "FlippableCapability::FlippableBehavior::FlipX"
-          },
-          "parameters": [
-            "Boss",
-            "Flippable",
-            "yes"
-          ]
-        }
-      ]
+      "parameters": []
     },
     {
       "folded": true,
@@ -1180,7 +1389,7 @@
       "colorR": 74,
       "creationTime": 0,
       "folded": true,
-      "name": "Armor Patch",
+      "name": "Armor Patch - Helmet",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
@@ -1214,8 +1423,8 @@
               "parameters": [
                 "",
                 "BarbarianHelm",
-                "DinoMort.X()+6",
-                "DinoMort.Y()-2",
+                "DinoMort.X()+4",
+                "DinoMort.Y()-4",
                 "\"Main\""
               ]
             }
@@ -1304,6 +1513,58 @@
         },
         {
           "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "BarbarianHelm",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "BarbarianHelm",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
           "conditions": [],
           "actions": [
             {
@@ -1313,9 +1574,209 @@
               "parameters": [
                 "BarbarianHelm",
                 "=",
-                "DinoMort.X()+6",
+                "DinoMort.X()+4",
                 "=",
-                "DinoMort.Y()-2"
+                "DinoMort.Y()-4"
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Armor Patch - Chestplate",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Armor",
+                ">=",
+                "50"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Create"
+              },
+              "parameters": [
+                "",
+                "DinoChestplate",
+                "DinoMort.X()+7",
+                "DinoMort.Y()+11",
+                "\"Main\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Create"
+                  },
+                  "parameters": [
+                    "",
+                    "Health_vis",
+                    "DinoMort.X()",
+                    "DinoMort.Y()-30",
+                    "\"Main\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "TextContainerCapability::TextContainerBehavior::SetValue"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Text",
+                    "=",
+                    "\"Half patched!\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectPositionYTween2"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Tween",
+                    "\"Lift\"",
+                    "Health_vis.Y()-30",
+                    "\"linear\"",
+                    ".8",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Tween::TweenBehavior::AddObjectOpacityTween2"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Tween",
+                    "\"Fade\"",
+                    "0",
+                    "\"linear\"",
+                    "1",
+                    "yes"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Effect",
+                    "\"Health_gain\"",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EffectCapability::EffectBehavior::EnableEffect"
+                  },
+                  "parameters": [
+                    "Health_vis",
+                    "Effect",
+                    "\"Health_lose\"",
+                    "no"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "a"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "DinoChestplate",
+                "Flippable",
+                "yes"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyPressed"
+              },
+              "parameters": [
+                "",
+                "d"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "FlippableCapability::FlippableBehavior::FlipX"
+              },
+              "parameters": [
+                "DinoChestplate",
+                "Flippable",
+                "no"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MettreXY"
+              },
+              "parameters": [
+                "DinoChestplate",
+                "=",
+                "DinoMort.X()+7",
+                "=",
+                "DinoMort.Y()+11"
               ]
             }
           ]

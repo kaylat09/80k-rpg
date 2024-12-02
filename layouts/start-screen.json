@@ -934,6 +934,14 @@
         },
         {
           "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "1"
+          ]
+        },
+        {
+          "type": {
             "value": "ShowLayer"
           },
           "parameters": [
@@ -948,14 +956,6 @@
           "parameters": [
             "Credits_Bitmap",
             ""
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "2"
           ]
         },
         {
