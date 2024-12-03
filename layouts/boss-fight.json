@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9991260522560059,
+    "zoomFactor": 2.446261262757341,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -33,8 +33,8 @@
       "name": "DinoMort",
       "persistentUuid": "a7306861-9b44-4b43-9ba2-95520b209d1c",
       "width": 0,
-      "x": 152,
-      "y": 360,
+      "x": 216,
+      "y": 408,
       "zOrder": 1014,
       "numberProperties": [],
       "stringProperties": [],
@@ -42,13 +42,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 880,
       "keepRatio": true,
       "layer": "",
       "name": "CatacombTileMap",
       "persistentUuid": "f16c09fb-0f35-4c43-a519-0cdc24432381",
-      "width": 0,
+      "width": 576,
       "x": 96,
       "y": -352,
       "zOrder": 3,
@@ -208,13 +209,14 @@
     },
     {
       "angle": 0,
-      "customSize": false,
-      "height": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 880,
       "keepRatio": true,
       "layer": "",
       "name": "CatacombTileMap",
       "persistentUuid": "a83cdfbe-5c21-4cd1-ac81-8c536c8004d8",
-      "width": 0,
+      "width": 1008,
       "x": -144,
       "y": -144,
       "zOrder": 2,
@@ -946,7 +948,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Movement",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -1311,6 +1312,17 @@
               "parameters": [
                 "DinoMort",
                 "CatacombTileMap",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopTween"
+              },
+              "parameters": [
+                "DinoMort",
+                "Tween",
+                "\"Knockback\"",
                 ""
               ]
             }
@@ -2737,7 +2749,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Boss",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -2747,7 +2758,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase Transitions",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -2851,6 +2861,15 @@
                   "parameters": [
                     "Boss",
                     "\"AttackTimer\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ResetObjectTimer"
+                  },
+                  "parameters": [
+                    "DinoMort",
+                    "\"KnockbackTimer\""
                   ]
                 }
               ]
@@ -3142,7 +3161,6 @@
           "colorG": 176,
           "colorR": 74,
           "creationTime": 0,
-          "folded": true,
           "name": "Phase 1",
           "source": "",
           "type": "BuiltinCommonInstructions::Group",
@@ -3188,12 +3206,12 @@
                   "parameters": [
                     "Boss",
                     "Tween",
-                    "\"player\"",
-                    "DinoMort.X()",
-                    "DinoMort.Y()",
+                    "\"DinoMort\"",
+                    "DinoMort.X() - 20",
+                    "DinoMort.Y() - 5",
                     "\"linear\"",
-                    "0.2",
-                    "no"
+                    "0.5",
+                    ""
                   ]
                 },
                 {
@@ -3259,10 +3277,10 @@
                     "DinoMort",
                     "Tween",
                     "\"knockback\"",
-                    "Boss.X() - 150",
+                    "Boss.X() - 100",
                     "DinoMort.Y()",
                     "\"linear\"",
-                    "0.7",
+                    "1",
                     ""
                   ]
                 },
@@ -4384,7 +4402,7 @@
                 "DinoMort",
                 "Tween",
                 "\"knockback\"",
-                "Boss.X() - 150",
+                "Boss.X() - 90",
                 "DinoMort.Y()",
                 "\"linear\"",
                 "0.7",
