@@ -18,7 +18,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.2,
     "snap": true,
-    "zoomFactor": 0.9460294603000186,
+    "zoomFactor": 0.9460294603000188,
     "windowMask": false
   },
   "objectsGroups": [],
@@ -649,6 +649,40 @@
       "x": 224,
       "y": 142,
       "zOrder": 1028,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 40,
+      "keepRatio": true,
+      "layer": "Dialouge",
+      "name": "Player_hint",
+      "persistentUuid": "e5c8a31e-a56b-480f-bdea-135b7278e911",
+      "width": 736,
+      "x": 32,
+      "y": 512,
+      "zOrder": 1029,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 38,
+      "keepRatio": true,
+      "layer": "Dialouge",
+      "name": "ESC_DIALOGUE",
+      "persistentUuid": "e31c530f-adfb-43e7-90b3-65913dc9216f",
+      "width": 276,
+      "x": 485,
+      "y": 544,
+      "zOrder": 1030,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
@@ -1481,6 +1515,54 @@
           ]
         }
       ]
+    },
+    {
+      "assetStoreId": "",
+      "name": "Player_hint",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "AutoTyping",
+          "type": "AutoTyping::AutoTyping",
+          "Text": "Text",
+          "Interval": 0.02,
+          "CharacterJustAdded": false,
+          "FullText": "",
+          "TypedText": ""
+        }
+      ],
+      "content": {
+        "text": "You are not patched, adventurer! Are you sure you want to continue?",
+        "opacity": 255,
+        "scale": 1,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "left",
+        "wordWrap": true
+      }
+    },
+    {
+      "assetStoreId": "",
+      "name": "ESC_DIALOGUE",
+      "type": "BitmapText::BitmapTextObject",
+      "variables": [],
+      "effects": [],
+      "behaviors": [],
+      "content": {
+        "text": "PRESS ESC TO EXIT DIALOGUE",
+        "opacity": 255,
+        "scale": 0.8,
+        "fontSize": 20,
+        "tint": "255;255;255",
+        "bitmapFontResourceName": "assets\\8BitOperatorPlus8Regular_Edited.fnt",
+        "textureAtlasResourceName": "assets\\8BitOperatorPlus8Regular_Edited.png",
+        "align": "right",
+        "wordWrap": true
+      }
     }
   ],
   "objectsFolderStructure": {
@@ -1491,6 +1573,12 @@
         "children": [
           {
             "objectName": "X_exit"
+          },
+          {
+            "objectName": "Player_hint"
+          },
+          {
+            "objectName": "ESC_DIALOGUE"
           },
           {
             "objectName": "GateDoor"
@@ -2998,6 +3086,7 @@
           "comment": "Gate"
         },
         {
+          "folded": true,
           "type": "BuiltinCommonInstructions::Standard",
           "conditions": [
             {
@@ -3075,6 +3164,77 @@
                 "",
                 "100",
                 ""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "fullyPatched",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "ShowLayer"
+                  },
+                  "parameters": [
+                    "",
+                    "\"Dialouge\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "AutoTyping::AutoTyping::RestartFromBeginning"
+                  },
+                  "parameters": [
+                    "Player_hint",
+                    "AutoTyping",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::And"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "KeyPressed"
+                  },
+                  "parameters": [
+                    "",
+                    "Escape"
+                  ]
+                }
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "HideLayer"
+              },
+              "parameters": [
+                "",
+                "\"Dialouge\""
               ]
             }
           ]
@@ -3182,17 +3342,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetNumberObjectVariable"
-          },
-          "parameters": [
-            "DinoMort",
-            "Armor",
-            "-",
-            "20"
-          ]
-        },
         {
           "type": {
             "value": "Tween::TweenBehavior::AddObjectPositionTween2"
@@ -3431,6 +3580,63 @@
       "conditions": [
         {
           "type": {
+            "value": "CollisionNP"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            "",
+            "",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "NumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            ">",
+            "0"
+          ]
+        },
+        {
+          "type": {
+            "value": "BuiltinCommonInstructions::Once"
+          },
+          "parameters": []
+        }
+      ],
+      "actions": [
+        {
+          "type": {
+            "value": "SetNumberObjectVariable"
+          },
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "-",
+            "20"
+          ]
+        },
+        {
+          "type": {
+            "value": "SeparateFromObjects"
+          },
+          "parameters": [
+            "DinoMort",
+            "Monster",
+            ""
+          ]
+        }
+      ]
+    },
+    {
+      "type": "BuiltinCommonInstructions::Standard",
+      "conditions": [
+        {
+          "type": {
             "value": "NumberObjectVariable"
           },
           "parameters": [
@@ -3523,21 +3729,13 @@
         },
         {
           "type": {
-            "value": "BuiltinCommonInstructions::And"
+            "value": "NumberObjectVariable"
           },
-          "parameters": [],
-          "subInstructions": [
-            {
-              "type": {
-                "value": "NumberObjectVariable"
-              },
-              "parameters": [
-                "DinoMort",
-                "Armor",
-                "<",
-                "100"
-              ]
-            }
+          "parameters": [
+            "DinoMort",
+            "Armor",
+            "<",
+            "100"
           ]
         },
         {
@@ -3989,6 +4187,34 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Armor",
+                ">=",
+                "100"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "fullyPatched",
+                "True",
+                ""
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -4373,7 +4599,7 @@
       "isLocked": false,
       "name": "Dialouge",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -4398,6 +4624,10 @@
     {
       "name": "Animation",
       "type": "AnimatableCapability::AnimatableBehavior"
+    },
+    {
+      "name": "AutoTyping",
+      "type": "AutoTyping::AutoTyping"
     },
     {
       "name": "Boomerang",
