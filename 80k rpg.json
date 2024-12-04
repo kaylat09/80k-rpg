@@ -6244,9 +6244,14 @@
   "objectsGroups": [],
   "variables": [
     {
-      "name": "Health",
+      "name": "DinoHealth",
       "type": "number",
-      "value": 5
+      "value": 0
+    },
+    {
+      "name": "DinoArmor",
+      "type": "number",
+      "value": 0
     },
     {
       "name": "LastDirection",

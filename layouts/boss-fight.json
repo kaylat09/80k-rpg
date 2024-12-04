@@ -755,6 +755,41 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Health",
+                "=",
+                "DinoHealth"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberObjectVariable"
+              },
+              "parameters": [
+                "DinoMort",
+                "Armor",
+                "=",
+                "DinoArmor"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
